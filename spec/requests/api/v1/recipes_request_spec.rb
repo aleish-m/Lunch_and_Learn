@@ -18,7 +18,7 @@ describe 'Find Recipes API' do
 
         expect(recipe_data).to be_an(Array)
         recipe_data.each do |recipe|
-          expect(recipe[:id]).to be_a(String)
+          expect(recipe[:id]).to be(nil)
           expect(recipe[:type]).to be_a(String)
           expect(recipe[:attributes]).to be_a(Hash)
           expect(recipe[:attributes].count).to eq(4)
