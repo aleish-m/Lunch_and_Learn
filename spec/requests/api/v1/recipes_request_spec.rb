@@ -3,7 +3,7 @@ require 'rails_helper'
 describe 'Find Recipes API' do
   describe 'find recipes for a country' do
     describe 'happy path' do
-      it 'can recipes for a country when country param is sent in by user' do
+      it 'can recipes for a country when country param is sent in by user', :vcr do
         request_params = {country: 'thailand'}
 
         get '/api/v1/recipes', params: request_params
