@@ -13,9 +13,9 @@ class Api::V1::RecipesController < ApplicationController
 
   def find_country
     if country_params.present?
-      country = country_params[:country]
+      country_params[:country]
     else
-      country = CountryFacade.find_random_country
+      CountryFacade.find_random_country
     end
   end
 end
