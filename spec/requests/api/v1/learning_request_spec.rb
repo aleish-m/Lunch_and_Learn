@@ -23,7 +23,7 @@ describe 'Find Learning resources API' do
         expect(learning_data).to have_key(:id)
         expect(learning_data[:id]).to be(nil)
         expect(learning_data).to have_key(:type)
-        expect(learning_data[:type]).to be(String)
+        expect(learning_data[:type]).to be_a(String)
         expect(learning_data).to have_key(:attributes)
         expect(learning_data[:attributes]).to be_a(Hash)
         expect(learning_data[:attributes].count).to eq(3)
@@ -42,7 +42,7 @@ describe 'Find Learning resources API' do
         expect(learning_attributes[:video]).to_not have_key(:channelTitle)
         expect(learning_attributes[:video]).to_not have_key(:description)
         expect(learning_attributes[:video]).to_not have_key(:kind)
-        
+
         expect(learning_attributes).to have_key(:images)
         expect(learning_attributes[:images]).to be_an(Array)
 
@@ -53,9 +53,9 @@ describe 'Find Learning resources API' do
           expect(image).to have_key(:url)
           expect(image[:url]).to be_a(String)
 
-          expect(image).to_not have_key(:url)
-          expect(image).to_not have_key(:url)
-          expect(image).to_not have_key(:url)
+          expect(image).to_not have_key(:description)
+          expect(image).to_not have_key(:id)
+          expect(image).to_not have_key(:user)
         end
       end
     end
