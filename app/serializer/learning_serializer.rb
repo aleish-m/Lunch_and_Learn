@@ -5,7 +5,11 @@ class LearningSerializer
   attributes :country
 
   attribute :video do |resource|
-    VideoSerializer.video_info(resource.video)
+    if resource.video.present?
+      VideoSerializer.video_info(resource.video)
+    else
+      []
+    end
   end
 
   attribute :images do |resource|
