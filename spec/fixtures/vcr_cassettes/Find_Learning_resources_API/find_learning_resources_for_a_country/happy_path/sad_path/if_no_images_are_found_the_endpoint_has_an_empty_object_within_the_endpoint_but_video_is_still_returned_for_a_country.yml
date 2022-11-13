@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://www.googleapis.com/youtube/v3/search?channelId=<mr_history_id>&key=AIzaSyDGwDIv7vZ-rR4YzWm8tGKjWCP6XSiJWS8&part=snippet&q=Pakistan
+    uri: https://www.googleapis.com/youtube/v3/search?channelId=<mr_history_id>&key=<youtube_api_key>&part=snippet&q=Pakistan
     body:
       encoding: US-ASCII
       string: ''
@@ -25,7 +25,7 @@ http_interactions:
       - Referer
       - X-Origin
       Date:
-      - Sun, 13 Nov 2022 07:09:32 GMT
+      - Sun, 13 Nov 2022 21:58:14 GMT
       Server:
       - scaffolding on HTTPServer2
       Cache-Control:
@@ -220,5 +220,5 @@ http_interactions:
             }
           ]
         }
-  recorded_at: Sun, 13 Nov 2022 07:09:32 GMT
+  recorded_at: Sun, 13 Nov 2022 21:58:14 GMT
 recorded_with: VCR 6.1.0

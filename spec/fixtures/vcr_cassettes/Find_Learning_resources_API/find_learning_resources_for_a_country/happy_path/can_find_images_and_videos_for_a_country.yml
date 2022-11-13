@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://www.googleapis.com/youtube/v3/search?channelId=<mr_history_id>&key=AIzaSyDGwDIv7vZ-rR4YzWm8tGKjWCP6XSiJWS8&part=snippet&q=thailand
+    uri: https://www.googleapis.com/youtube/v3/search?channelId=<mr_history_id>&key=<youtube_api_key>&part=snippet&q=thailand
     body:
       encoding: US-ASCII
       string: ''
@@ -25,7 +25,7 @@ http_interactions:
       - Referer
       - X-Origin
       Date:
-      - Sun, 13 Nov 2022 05:19:10 GMT
+      - Sun, 13 Nov 2022 21:58:14 GMT
       Server:
       - scaffolding on HTTPServer2
       Cache-Control:
@@ -46,7 +46,7 @@ http_interactions:
       string: |
         {
           "kind": "youtube#searchListResponse",
-          "etag": "HSF9w1RogmMYnw0K6PDlwt29EB8",
+          "etag": "fVu7Ruescrq5v2yZiddssqABc1I",
           "nextPageToken": "CAUQAA",
           "regionCode": "US",
           "pageInfo": {
@@ -192,41 +192,41 @@ http_interactions:
             },
             {
               "kind": "youtube#searchResult",
-              "etag": "9u6Z6MvhUUaTAJmiAIxI2hvi_fA",
+              "etag": "u_r_wAly66Ni9ACjp8KJU3SPZLA",
               "id": {
                 "kind": "youtube#video",
-                "videoId": "PTSlC-5Qp7o"
+                "videoId": "2C25cTQF2jw"
               },
               "snippet": {
-                "publishedAt": "2019-12-17T19:38:23Z",
+                "publishedAt": "2020-04-19T10:39:13Z",
                 "channelId": "<mr_history_id>",
-                "title": "A Super Quick History of Comoros",
-                "description": "Pictures Requiring Attribution: Radosław Botev: https://commons.wikimedia.org/wiki/File:Grande_Comore_nature_2.jpg ...",
+                "title": "A Super Quick History of Egypt",
+                "description": "Sources: \"A History of Ancient Egypt\" by Marc Van De Mieroop (2011) Wiley-Blackwell, Sussex, UK. \"A History of Egypt: From the ...",
                 "thumbnails": {
                   "default": {
-                    "url": "https://i.ytimg.com/vi/PTSlC-5Qp7o/default.jpg",
+                    "url": "https://i.ytimg.com/vi/2C25cTQF2jw/default.jpg",
                     "width": 120,
                     "height": 90
                   },
                   "medium": {
-                    "url": "https://i.ytimg.com/vi/PTSlC-5Qp7o/mqdefault.jpg",
+                    "url": "https://i.ytimg.com/vi/2C25cTQF2jw/mqdefault.jpg",
                     "width": 320,
                     "height": 180
                   },
                   "high": {
-                    "url": "https://i.ytimg.com/vi/PTSlC-5Qp7o/hqdefault.jpg",
+                    "url": "https://i.ytimg.com/vi/2C25cTQF2jw/hqdefault.jpg",
                     "width": 480,
                     "height": 360
                   }
                 },
                 "channelTitle": "Mr History",
                 "liveBroadcastContent": "none",
-                "publishTime": "2019-12-17T19:38:23Z"
+                "publishTime": "2020-04-19T10:39:13Z"
               }
             }
           ]
         }
-  recorded_at: Sun, 13 Nov 2022 05:19:10 GMT
+  recorded_at: Sun, 13 Nov 2022 21:58:14 GMT
 - request:
     method: get
     uri: https://api.unsplash.com/search/photos?client_id=<unsplash_api_key>&query=thailand
@@ -294,17 +294,17 @@ http_interactions:
       Accept-Ranges:
       - bytes
       Date:
-      - Sun, 13 Nov 2022 05:19:11 GMT
+      - Sun, 13 Nov 2022 21:58:14 GMT
       Age:
-      - '7599'
+      - '67542'
       X-Served-By:
-      - cache-iad-kcgs7200026-IAD, cache-den8258-DEN
+      - cache-iad-kcgs7200026-IAD, cache-den8228-DEN
       X-Cache:
       - MISS, HIT
       X-Cache-Hits:
       - 0, 1
       X-Timer:
-      - S1668316751.063445,VS0,VE2
+      - S1668376694.467085,VS0,VE2
       Vary:
       - Accept-Encoding, Origin,Authorization,Accept-Language,client-geo-region,Accept
     body:
@@ -359,5 +359,5 @@ http_interactions:
         by a rocky island\",\"alt_description\":\"boats at the sea near stone island
         during day\",\"urls\":{\"raw\":\"https://images.unsplash.com/photo-1494949360228-4e9bde560065?ixid=MnwzODAyNDB8MHwxfHNlYXJjaHwxMHx8dGhhaWxhbmR8ZW58MHx8fHwxNjY4MzA5MTUy\\u0026ixlib=rb-4.0.3\",\"full\":\"https://images.unsplash.com/photo-1494949360228-4e9bde560065?crop=entropy\\u0026cs=tinysrgb\\u0026fm=jpg\\u0026ixid=MnwzODAyNDB8MHwxfHNlYXJjaHwxMHx8dGhhaWxhbmR8ZW58MHx8fHwxNjY4MzA5MTUy\\u0026ixlib=rb-4.0.3\\u0026q=80\",\"regular\":\"https://images.unsplash.com/photo-1494949360228-4e9bde560065?crop=entropy\\u0026cs=tinysrgb\\u0026fit=max\\u0026fm=jpg\\u0026ixid=MnwzODAyNDB8MHwxfHNlYXJjaHwxMHx8dGhhaWxhbmR8ZW58MHx8fHwxNjY4MzA5MTUy\\u0026ixlib=rb-4.0.3\\u0026q=80\\u0026w=1080\",\"small\":\"https://images.unsplash.com/photo-1494949360228-4e9bde560065?crop=entropy\\u0026cs=tinysrgb\\u0026fit=max\\u0026fm=jpg\\u0026ixid=MnwzODAyNDB8MHwxfHNlYXJjaHwxMHx8dGhhaWxhbmR8ZW58MHx8fHwxNjY4MzA5MTUy\\u0026ixlib=rb-4.0.3\\u0026q=80\\u0026w=400\",\"thumb\":\"https://images.unsplash.com/photo-1494949360228-4e9bde560065?crop=entropy\\u0026cs=tinysrgb\\u0026fit=max\\u0026fm=jpg\\u0026ixid=MnwzODAyNDB8MHwxfHNlYXJjaHwxMHx8dGhhaWxhbmR8ZW58MHx8fHwxNjY4MzA5MTUy\\u0026ixlib=rb-4.0.3\\u0026q=80\\u0026w=200\",\"small_s3\":\"https://s3.us-west-2.amazonaws.com/images.unsplash.com/small/photo-1494949360228-4e9bde560065\"},\"links\":{\"self\":\"https://api.unsplash.com/photos/PCgM2CYm6HA\",\"html\":\"https://unsplash.com/photos/PCgM2CYm6HA\",\"download\":\"https://unsplash.com/photos/PCgM2CYm6HA/download?ixid=MnwzODAyNDB8MHwxfHNlYXJjaHwxMHx8dGhhaWxhbmR8ZW58MHx8fHwxNjY4MzA5MTUy\",\"download_location\":\"https://api.unsplash.com/photos/PCgM2CYm6HA/download?ixid=MnwzODAyNDB8MHwxfHNlYXJjaHwxMHx8dGhhaWxhbmR8ZW58MHx8fHwxNjY4MzA5MTUy\"},\"likes\":988,\"liked_by_user\":false,\"current_user_collections\":[],\"sponsorship\":null,\"topic_submissions\":{\"nature\":{\"status\":\"approved\",\"approved_on\":\"2020-04-06T14:20:17Z\"}},\"user\":{\"id\":\"nDInY9OUkEM\",\"updated_at\":\"2022-10-11T08:17:55Z\",\"username\":\"marcinkalinski\",\"name\":\"Marcin
         Kaliński\",\"first_name\":\"Marcin\",\"last_name\":\"Kaliński\",\"twitter_username\":null,\"portfolio_url\":null,\"bio\":null,\"location\":null,\"links\":{\"self\":\"https://api.unsplash.com/users/marcinkalinski\",\"html\":\"https://unsplash.com/@marcinkalinski\",\"photos\":\"https://api.unsplash.com/users/marcinkalinski/photos\",\"likes\":\"https://api.unsplash.com/users/marcinkalinski/likes\",\"portfolio\":\"https://api.unsplash.com/users/marcinkalinski/portfolio\",\"following\":\"https://api.unsplash.com/users/marcinkalinski/following\",\"followers\":\"https://api.unsplash.com/users/marcinkalinski/followers\"},\"profile_image\":{\"small\":\"https://images.unsplash.com/profile-fb-1494245343-3e86576feff1.jpg?ixlib=rb-1.2.1\\u0026crop=faces\\u0026fit=crop\\u0026w=32\\u0026h=32\",\"medium\":\"https://images.unsplash.com/profile-fb-1494245343-3e86576feff1.jpg?ixlib=rb-1.2.1\\u0026crop=faces\\u0026fit=crop\\u0026w=64\\u0026h=64\",\"large\":\"https://images.unsplash.com/profile-fb-1494245343-3e86576feff1.jpg?ixlib=rb-1.2.1\\u0026crop=faces\\u0026fit=crop\\u0026w=128\\u0026h=128\"},\"instagram_username\":null,\"total_collections\":1,\"total_likes\":0,\"total_photos\":9,\"accepted_tos\":false,\"for_hire\":false,\"social\":{\"instagram_username\":null,\"portfolio_url\":null,\"twitter_username\":null,\"paypal_email\":null}},\"tags\":[]}]}"
-  recorded_at: Sun, 13 Nov 2022 05:19:11 GMT
+  recorded_at: Sun, 13 Nov 2022 21:58:14 GMT
 recorded_with: VCR 6.1.0

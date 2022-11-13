@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://www.googleapis.com/youtube/v3/search?channelId=<mr_history_id>&key=AIzaSyDGwDIv7vZ-rR4YzWm8tGKjWCP6XSiJWS8&part=snippet&q=Tacikistan
+    uri: https://www.googleapis.com/youtube/v3/search?channelId=<mr_history_id>&key=<youtube_api_key>&part=snippet&q=Tacikistan
     body:
       encoding: US-ASCII
       string: ''
@@ -25,7 +25,7 @@ http_interactions:
       - Referer
       - X-Origin
       Date:
-      - Sun, 13 Nov 2022 07:23:51 GMT
+      - Sun, 13 Nov 2022 21:58:15 GMT
       Server:
       - scaffolding on HTTPServer2
       Cache-Control:
@@ -54,7 +54,7 @@ http_interactions:
           },
           "items": []
         }
-  recorded_at: Sun, 13 Nov 2022 07:23:51 GMT
+  recorded_at: Sun, 13 Nov 2022 21:58:15 GMT
 - request:
     method: get
     uri: https://api.unsplash.com/search/photos?client_id=<unsplash_api_key>&query=Tacikistan
@@ -118,17 +118,17 @@ http_interactions:
       Accept-Ranges:
       - bytes
       Date:
-      - Sun, 13 Nov 2022 07:23:52 GMT
+      - Sun, 13 Nov 2022 21:58:15 GMT
       Age:
-      - '0'
+      - '52463'
       X-Served-By:
-      - cache-iad-kjyo7100119-IAD, cache-den8221-DEN
+      - cache-iad-kjyo7100119-IAD, cache-den8253-DEN
       X-Cache:
-      - MISS, MISS
+      - MISS, HIT
       X-Cache-Hits:
-      - 0, 0
+      - 0, 1
       X-Timer:
-      - S1668324232.081385,VS0,VE79
+      - S1668376695.435519,VS0,VE1
       Vary:
       - Accept-Encoding, Origin,Authorization,Accept-Language,client-geo-region,Accept
     body:
@@ -147,5 +147,5 @@ http_interactions:
         me to take the time and appreciate what is around you.","alt_description":"body
         of water and snow-covered mountains during daytime","urls":{"raw":"https://images.unsplash.com/photo-1480497490787-505ec076689f?ixlib=rb-1.2.1","full":"https://images.unsplash.com/photo-1480497490787-505ec076689f?ixlib=rb-1.2.1\u0026q=80\u0026cs=tinysrgb\u0026fm=jpg\u0026crop=entropy","regular":"https://images.unsplash.com/photo-1480497490787-505ec076689f?ixlib=rb-1.2.1\u0026w=1080\u0026fit=max\u0026q=80\u0026fm=jpg\u0026crop=entropy\u0026cs=tinysrgb","small":"https://images.unsplash.com/photo-1480497490787-505ec076689f?ixlib=rb-1.2.1\u0026w=400\u0026fit=max\u0026q=80\u0026fm=jpg\u0026crop=entropy\u0026cs=tinysrgb","thumb":"https://images.unsplash.com/photo-1480497490787-505ec076689f?ixlib=rb-1.2.1\u0026w=200\u0026fit=max\u0026q=80\u0026fm=jpg\u0026crop=entropy\u0026cs=tinysrgb","small_s3":"https://s3.us-west-2.amazonaws.com/images.unsplash.com/small/photo-1480497490787-505ec076689f"},"links":{"self":"https://api.unsplash.com/photos/YFFGkE3y4F8","html":"https://unsplash.com/photos/YFFGkE3y4F8","download":"https://unsplash.com/photos/YFFGkE3y4F8/download","download_location":"https://api.unsplash.com/photos/YFFGkE3y4F8/download"},"likes":2712,"liked_by_user":false,"current_user_collections":[],"sponsorship":null,"topic_submissions":{},"premium":false,"user":{"id":"wk-b071tZ0o","updated_at":"2022-10-06T18:35:46Z","username":"timstief","name":"Tim
         Stief","first_name":"Tim","last_name":"Stief","twitter_username":null,"portfolio_url":"http://timstief.ch/","bio":null,"location":"Zurich","links":{"self":"https://api.unsplash.com/users/timstief","html":"https://unsplash.com/@timstief","photos":"https://api.unsplash.com/users/timstief/photos","likes":"https://api.unsplash.com/users/timstief/likes","portfolio":"https://api.unsplash.com/users/timstief/portfolio","following":"https://api.unsplash.com/users/timstief/following","followers":"https://api.unsplash.com/users/timstief/followers"},"profile_image":{"small":"https://images.unsplash.com/profile-1455099105651-9aa69818b001?ixlib=rb-1.2.1\u0026crop=faces\u0026fit=crop\u0026w=32\u0026h=32","medium":"https://images.unsplash.com/profile-1455099105651-9aa69818b001?ixlib=rb-1.2.1\u0026crop=faces\u0026fit=crop\u0026w=64\u0026h=64","large":"https://images.unsplash.com/profile-1455099105651-9aa69818b001?ixlib=rb-1.2.1\u0026crop=faces\u0026fit=crop\u0026w=128\u0026h=128"},"instagram_username":"timstief","total_collections":0,"total_likes":101,"total_photos":26,"accepted_tos":true,"for_hire":false,"social":{"instagram_username":"timstief","portfolio_url":"http://timstief.ch/","twitter_username":null,"paypal_email":null}}}}}]}]}'
-  recorded_at: Sun, 13 Nov 2022 07:23:52 GMT
+  recorded_at: Sun, 13 Nov 2022 21:58:15 GMT
 recorded_with: VCR 6.1.0

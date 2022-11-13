@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://www.googleapis.com/youtube/v3/search?channelId=<mr_history_id>&key=AIzaSyDGwDIv7vZ-rR4YzWm8tGKjWCP6XSiJWS8&part=snippet&q=Usbekistan
+    uri: https://www.googleapis.com/youtube/v3/search?channelId=<mr_history_id>&key=<youtube_api_key>&part=snippet&q=Usbekistan
     body:
       encoding: US-ASCII
       string: ''
@@ -25,7 +25,7 @@ http_interactions:
       - Referer
       - X-Origin
       Date:
-      - Sun, 13 Nov 2022 07:32:41 GMT
+      - Sun, 13 Nov 2022 21:58:15 GMT
       Server:
       - scaffolding on HTTPServer2
       Cache-Control:
@@ -54,7 +54,7 @@ http_interactions:
           },
           "items": []
         }
-  recorded_at: Sun, 13 Nov 2022 07:32:41 GMT
+  recorded_at: Sun, 13 Nov 2022 21:58:15 GMT
 - request:
     method: get
     uri: https://api.unsplash.com/search/photos?client_id=<unsplash_api_key>&query=Usbekistan
@@ -118,21 +118,21 @@ http_interactions:
       Accept-Ranges:
       - bytes
       Date:
-      - Sun, 13 Nov 2022 07:32:41 GMT
+      - Sun, 13 Nov 2022 21:58:15 GMT
       Age:
-      - '0'
+      - '51934'
       X-Served-By:
-      - cache-iad-kcgs7200029-IAD, cache-den8280-DEN
+      - cache-iad-kcgs7200029-IAD, cache-den8244-DEN
       X-Cache:
-      - MISS, MISS
+      - MISS, HIT
       X-Cache-Hits:
-      - 0, 0
+      - 0, 1
       X-Timer:
-      - S1668324761.384898,VS0,VE86
+      - S1668376696.933441,VS0,VE12
       Vary:
       - Accept-Encoding, Origin,Authorization,Accept-Language,client-geo-region,Accept
     body:
       encoding: UTF-8
       string: '{"total":0,"total_pages":0,"results":[]}'
-  recorded_at: Sun, 13 Nov 2022 07:32:41 GMT
+  recorded_at: Sun, 13 Nov 2022 21:58:15 GMT
 recorded_with: VCR 6.1.0
