@@ -1,4 +1,4 @@
-class Api::V1::LearningResourcesController < ApplicationController 
+class Api::V1::LearningResourcesController < ApplicationController
   def index
     country = country_params[:country]
     video = VideoFacade.find_country_video(country)
@@ -7,7 +7,7 @@ class Api::V1::LearningResourcesController < ApplicationController
     render json: LearningSerializer.new(learning)
   end
 
-  private 
+  private
 
   def country_params
     params.permit(:country)

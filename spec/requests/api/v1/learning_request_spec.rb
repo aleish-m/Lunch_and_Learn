@@ -60,12 +60,12 @@ describe 'Find Learning resources API' do
       end
 
       describe 'sad path' do
-        it 'if no images are found the endpoint has an empty object within the endpoint but video is still returned for a country', :vcr do
+        it 'if no images are found the endpoint has an empty object within the endpoint but video is still returned for a country',
+           :vcr do
           allow(ImageService).to receive(:get_images_for_country)
-          .and_return({total: 0,
-                      total_pages: 0,
-                      results: []
-                      }) 
+            .and_return({ total: 0,
+                          total_pages: 0,
+                          results: [] })
 
           request_params = { country: 'Pakistan' }
 
@@ -107,7 +107,8 @@ describe 'Find Learning resources API' do
           expect(learning_attributes[:images]).to be_empty
         end
 
-        it 'if no videos are found the endpoint has an empty object within the endpoint but images are still returned for a country', :vcr do
+        it 'if no videos are found the endpoint has an empty object within the endpoint but images are still returned for a country',
+           :vcr do
           request_params = { country: 'Tacikistan' }
 
           get '/api/v1/learning_resources', params: request_params
@@ -167,7 +168,7 @@ describe 'Find Learning resources API' do
 
           expect(learning_data).to be_a(Hash)
           expect(learning_data.count).to eq(3)
-          
+
           expect(learning_data).to have_key(:id)
           expect(learning_data[:id]).to be(nil)
           expect(learning_data).to have_key(:type)
