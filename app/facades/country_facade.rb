@@ -13,6 +13,7 @@ class CountryFacade
 
   def self.find_country_location(country)
     country_data = CountryService.get_info_for_country(country)
-    country_data[0][:latlng]
+    location = country_data[0][:latlng]
+    {lat:location[0], lng:location[1]}
   end
 end
