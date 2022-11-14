@@ -12,7 +12,6 @@ describe 'Find Tourist Sights API' do
 
         sights_response = JSON.parse(response.body, symbolize_names: true)
         sights_data = sights_response[:data]
-        sights_attributes = sights_response[:data][:attributes]
 
         expect(sights_response).to be_a(Hash)
         expect(sights_response.count).to eq(1)
@@ -26,7 +25,7 @@ describe 'Find Tourist Sights API' do
         sights_data.each do |sight|
           expect(sight.count).to eq(3)
           expect(sight[:id]).to be(nil)
-          expect(sight[:type]).to be_a("tourist_sight")
+          expect(sight[:type]).to eq("tourist_sight")
           expect(sight[:attributes]).to be_a(Hash)
           expect(sight[:attributes].count).to eq(3)
           expect(sight[:attributes][:name]).to be_a(String)
