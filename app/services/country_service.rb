@@ -4,6 +4,11 @@ class CountryService
     parse(response.body)
   end
 
+  def self.get_info_for_country(country)
+    response = conn.get("/v3.1/name/#{country}")
+    parse(response.body)
+  end
+
   private
 
   def self.conn
