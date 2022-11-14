@@ -85,5 +85,6 @@ VCR.configure do |config|
   config.filter_sensitive_data("<youtube_api_key>") { ENV['youtube_api_key']}
   config.filter_sensitive_data("<mr_history_id>") { ENV['mr_history_id']}
   config.filter_sensitive_data("<unsplash_api_key>") { ENV['unsplash_api_key']}
+  config.filter_sensitive_data("<places_api_key>") { ENV['places_api_key']}
   config.default_cassette_options = { re_record_interval: 5.days }
 end

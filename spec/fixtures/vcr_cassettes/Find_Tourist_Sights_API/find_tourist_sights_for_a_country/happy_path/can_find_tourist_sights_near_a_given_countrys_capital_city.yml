@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Mon, 14 Nov 2022 16:44:07 GMT
+      - Mon, 14 Nov 2022 17:04:04 GMT
       Server:
       - Apache/2.4.38 (Debian)
       Cache-Control:
@@ -45,5 +45,208 @@ http_interactions:
         republika","common":"Francúzsko"},"spa":{"official":"República francés","common":"Francia"},"swe":{"official":"Republiken
         Frankrike","common":"Frankrike"},"tur":{"official":"Fransa Cumhuriyeti","common":"Fransa"},"urd":{"official":"جمہوریہ
         فرانس","common":"فرانس"},"zho":{"official":"法兰西共和国","common":"法国"}},"latlng":[46.0,2.0],"landlocked":false,"borders":["AND","BEL","DEU","ITA","LUX","MCO","ESP","CHE"],"area":551695.0,"demonyms":{"eng":{"f":"French","m":"French"},"fra":{"f":"Française","m":"Français"}},"flag":"\uD83C\uDDEB\uD83C\uDDF7","maps":{"googleMaps":"https://goo.gl/maps/g7QxxSFsWyTPKuzd7","openStreetMaps":"https://www.openstreetmap.org/relation/1403916"},"population":67391582,"gini":{"2018":32.4},"fifa":"FRA","car":{"signs":["F"],"side":"right"},"timezones":["UTC-10:00","UTC-09:30","UTC-09:00","UTC-08:00","UTC-04:00","UTC-03:00","UTC+01:00","UTC+02:00","UTC+03:00","UTC+04:00","UTC+05:00","UTC+10:00","UTC+11:00","UTC+12:00"],"continents":["Europe"],"flags":{"png":"https://flagcdn.com/w320/fr.png","svg":"https://flagcdn.com/fr.svg"},"coatOfArms":{"png":"https://mainfacts.com/media/images/coats_of_arms/fr.png","svg":"https://mainfacts.com/media/images/coats_of_arms/fr.svg"},"startOfWeek":"monday","capitalInfo":{"latlng":[48.87,2.33]},"postalCode":{"format":"#####","regex":"^(\\d{5})$"}}]'
-  recorded_at: Mon, 14 Nov 2022 16:44:07 GMT
+  recorded_at: Mon, 14 Nov 2022 17:04:04 GMT
+- request:
+    method: get
+    uri: https://api.geoapify.com/v2/places?apiKey=<places_api_key>&categories=tourism.sights&filter=circle:2.0,46.0,20000
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 14 Nov 2022 17:04:05 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Api-Version:
+      - '1.0'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - accept, accept-language, content-language, access-control-max-age, access-control-allow-headers,
+        access-control-allow-methods, access-control-allow-origin, allow, api-version,
+        cf-ray, content-encoding, content-type, date, expect-ct, server, status, vary,
+        cache-control, etag, last-modified, expires, host, cf-ipcountry, cdn-loop,
+        accept-encoding, x-forwarded-for, x-forwarded-proto, cf-visitor, user-agent,
+        cf-connecting-ip, x-forwarded-port
+      Access-Control-Allow-Methods:
+      - GET, POST, DELETE, OPTIONS, PUT
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Vary:
+      - Accept-Encoding
+      - Accept-Encoding
+      Cache-Control:
+      - private, max-age=0, no-cache
+      Cf-Cache-Status:
+      - DYNAMIC
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=nj8eHndC03eAcR6KGqe%2FYJtbqtXpnbGhEM0C%2F18HXe82jnSWMh9IwU2CtZZTC3tvg%2FLHsOjOyL5FO4HJGevfJEY5pwDtQP4DzIVEBQ%2BzcW6j5%2Fhp7iSS4SWVVGvNA2lAINI%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 76a152ff3a026713-DFW
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: UTF-8
+      string: '{"type":"FeatureCollection","features":[{"type":"Feature","properties":{"name":"Tour
+        de l''horloge","street":"Allée de l''Horloge","suburb":"Les Granges","city":"Aubusson","municipality":"Aubusson","county":"Creuse","state":"New
+        Aquitaine","region":"Metropolitan France","postcode":"23200","country":"France","country_code":"fr","lon":2.1686008833333332,"lat":45.957359,"formatted":"Tour
+        de l''horloge, Allée de l''Horloge, 23200 Aubusson, France","address_line1":"Tour
+        de l''horloge","address_line2":"Allée de l''Horloge, 23200 Aubusson, France","categories":["building","building.historic","heritage","tourism","tourism.sights","tourism.sights.castle"],"details":["details","details.heritage","details.wiki_and_media"],"datasource":{"sourcename":"openstreetmap","attribution":"©
+        OpenStreetMap contributors","license":"Open Database Licence","url":"https://www.openstreetmap.org/copyright","raw":{"url":"http://en.wikipedia.org/wiki/File:Aubusson_tour_de_l_horloge.JPG","name":"Tour
+        de l''horloge","osm_id":225390299,"ref:mhs":"PA00099998","building":"yes","heritage":3,"historic":"castle","osm_type":"w","wikidata":"Q22951256","wikipedia":"fr:Tour
+        de l''Horloge","heritage:operator":"mhs","mhs:inscription_date":"1926-06-15"}},"place_id":"51d28de2694b5901405998a9a0ad8afa4640f00102f901db2e6f0d00000000920311546f7572206465206c27686f726c6f6765"},"geometry":{"type":"Point","coordinates":[2.1686008713020124,45.95735712380264]}},{"type":"Feature","properties":{"name":"Le
+        Château","street":"D 18","suburb":"Le Chaussadis","city":"Ahun","municipality":"Guéret","county":"Creuse","state":"New
+        Aquitaine","region":"Metropolitan France","postcode":"23150","country":"France","country_code":"fr","lon":2.0319593004704797,"lat":46.09207845,"formatted":"Le
+        Château, D 18, 23150 Ahun, France","address_line1":"Le Château","address_line2":"D
+        18, 23150 Ahun, France","categories":["building","building.historic","tourism","tourism.sights","tourism.sights.castle"],"details":["details.historic","details.wiki_and_media"],"datasource":{"sourcename":"openstreetmap","attribution":"©
+        OpenStreetMap contributors","license":"Open Database Licence","url":"https://www.openstreetmap.org/copyright","raw":{"name":"Le
+        Château","osm_id":51000012,"building":"yes","historic":"castle","osm_type":"w","wikipedia":"fr:Château
+        de Chaussadis","castle_type":"chateau"}},"place_id":"51934f2a948e410040597f186e5dc90b4740f00102f901cc320a030000000092030b4c65204368c3a274656175"},"geometry":{"type":"Point","coordinates":[2.032010228673195,46.09208267093435]}},{"type":"Feature","properties":{"name":"Le
+        Chapître","street":"Rue du Chapitre","suburb":"Les Mairies","city":"Aubusson","municipality":"Aubusson","county":"Creuse","state":"New
+        Aquitaine","region":"Metropolitan France","postcode":"23200","country":"France","country_code":"fr","lon":2.1724470189922442,"lat":45.9564654,"formatted":"Le
+        Chapître, Rue du Chapitre, 23200 Aubusson, France","address_line1":"Le Chapître","address_line2":"Rue
+        du Chapitre, 23200 Aubusson, France","categories":["tourism","tourism.attraction","tourism.attraction.viewpoint","tourism.sights","tourism.sights.ruines"],"details":["details.wiki_and_media"],"datasource":{"sourcename":"openstreetmap","attribution":"©
+        OpenStreetMap contributors","license":"Open Database Licence","url":"https://www.openstreetmap.org/copyright","raw":{"name":"Le
+        Chapître","osm_id":116644793,"tourism":"viewpoint","historic":"ruins","osm_type":"w","wikidata":"Q22951248","wikipedia":"fr:Château
+        d''Aubusson"}},"place_id":"517182b66d0861014059e85ca93c6cfa4640f00102f901b9dbf3060000000092030c4c652043686170c3ae747265"},"geometry":{"type":"Point","coordinates":[2.172379357464074,45.956428129860626]}},{"type":"Feature","properties":{"name":"Ruines
+        du château","street":"D 37","suburb":"Rocheplate","city":"Le Monteil-au-Vicomte","municipality":"Guéret","county":"Creuse","state":"New
+        Aquitaine","region":"Metropolitan France","postcode":"23460","country":"France","country_code":"fr","lon":1.9384857093620629,"lat":45.92922595,"formatted":"Ruines
+        du château, D 37, 23460 Le Monteil-au-Vicomte, France","address_line1":"Ruines
+        du château","address_line2":"D 37, 23460 Le Monteil-au-Vicomte, France","categories":["building","building.historic","heritage","tourism","tourism.sights"],"details":["details.heritage","details.wiki_and_media"],"datasource":{"sourcename":"openstreetmap","attribution":"©
+        OpenStreetMap contributors","license":"Open Database Licence","url":"https://www.openstreetmap.org/copyright","raw":{"name":"Ruines
+        du château","osm_id":176167790,"ref:mhs":"PA00100111","building":"castle","heritage":3,"historic":"heritage","osm_type":"w","wikidata":"Q2971743","wikipedia":"fr:Ruines
+        du château","heritage:operator":"mhs","mhs:inscription_date":"1964-02-19"}},"place_id":"514f4e194fdd03ff3f599c1feab7f0f64640f00102f9016e1b800a000000009203125275696e6573206475206368c3a274656175"},"geometry":{"type":"Point","coordinates":[1.9384434785651086,45.929221143072226]}},{"type":"Feature","properties":{"name":"Église
+        Saint-Pierre-de-Vérone","street":"Rue de l''Église","suburb":"Rocheplate","city":"Le
+        Monteil-au-Vicomte","municipality":"Guéret","county":"Creuse","state":"New
+        Aquitaine","region":"Metropolitan France","postcode":"23460","country":"France","country_code":"fr","lon":1.9371479470917352,"lat":45.929743900000005,"formatted":"Église
+        Saint-Pierre-de-Vérone, Rue de l''Église, 23460 Le Monteil-au-Vicomte, France","address_line1":"Église
+        Saint-Pierre-de-Vérone","address_line2":"Rue de l''Église, 23460 Le Monteil-au-Vicomte,
+        France","categories":["building","building.historic","building.place_of_worship","heritage","tourism","tourism.sights","tourism.sights.place_of_worship","tourism.sights.place_of_worship.church"],"details":["details.heritage","details.place_of_worship","details.wiki_and_media"],"datasource":{"sourcename":"openstreetmap","attribution":"©
+        OpenStreetMap contributors","license":"Open Database Licence","url":"https://www.openstreetmap.org/copyright","raw":{"name":"Église
+        Saint-Pierre-de-Vérone","osm_id":176168871,"amenity":"place_of_worship","ref:mhs":"PA00100112","building":"church","heritage":3,"historic":"heritage","osm_type":"w","religion":"christian","wikidata":"Q3584191","wikipedia":"fr:Église
+        Saint-Pierre du Monteil-au-Vicomte","denomination":"catholic","heritage:operator":"mhs","mhs:inscription_date":"1933-05-01"}},"place_id":"511eaa81738ffefe3f59e2cf80d401f74640f00102f901a71f800a0000000092031fc389676c697365205361696e742d5069657272652d64652d56c3a9726f6e65"},"geometry":{"type":"Point","coordinates":[1.9371485244724975,45.92974334993029]}},{"type":"Feature","properties":{"name":"Église
+        Saint-Sulpice","street":"Rue de l''Église","suburb":"Haute-Faye","city":"Banize","municipality":"Guéret","county":"Creuse","state":"New
+        Aquitaine","region":"Metropolitan France","postcode":"23120","country":"France","country_code":"fr","lon":1.998482,"lat":45.930222,"formatted":"Église
+        Saint-Sulpice, Rue de l''Église, 23120 Banize, France","address_line1":"Église
+        Saint-Sulpice","address_line2":"Rue de l''Église, 23120 Banize, France","categories":["building","building.historic","building.place_of_worship","heritage","tourism","tourism.sights","tourism.sights.place_of_worship","tourism.sights.place_of_worship.church"],"details":["details.heritage","details.place_of_worship","details.wiki_and_media"],"datasource":{"sourcename":"openstreetmap","attribution":"©
+        OpenStreetMap contributors","license":"Open Database Licence","url":"https://www.openstreetmap.org/copyright","raw":{"name":"Église
+        Saint-Sulpice","osm_id":179188787,"amenity":"place_of_worship","ref:mhs":"PA00100003","building":"church","heritage":2,"historic":"heritage","osm_type":"w","religion":"christian","wikidata":"Q22951266","wikipedia":"fr:Église
+        Saint-Sulpice de Banise","denomination":"catholic","heritage:operator":"mhs","mhs:inscription_date":"2007-01-23"}},"place_id":"517850fa42c8f9ff3f59afc4b68311f74640f00102f9013334ae0a00000000920315c389676c697365205361696e742d53756c70696365"},"geometry":{"type":"Point","coordinates":[1.9984819999999939,45.930222000353176]}},{"type":"Feature","properties":{"street":"Pont-Périt","suburb":"Moulin
+        de Lardiller","city":"Saint-Hilaire-le-Château","municipality":"Guéret","county":"Creuse","state":"New
+        Aquitaine","region":"Metropolitan France","postcode":"23250","country":"France","country_code":"fr","lon":1.9080717,"lat":45.9939354,"formatted":"Pont-Périt,
+        23250 Saint-Hilaire-le-Château, France","address_line1":"Pont-Périt","address_line2":"23250
+        Saint-Hilaire-le-Château, France","name":"Pont-Périt","categories":["heritage","highway","highway.path","tourism","tourism.sights","tourism.sights.bridge"],"details":["details.heritage","details.historic","details.wiki_and_media"],"datasource":{"sourcename":"openstreetmap","attribution":"©
+        OpenStreetMap contributors","license":"Open Database Licence","url":"https://www.openstreetmap.org/copyright","raw":{"name":"Pont-Périt","layer":1,"bridge":"yes","osm_id":180736076,"highway":"path","ref:mhs":"PA00135406","z_order":100,"heritage":3,"historic":"bridge","osm_type":"w","wikidata":"Q22976050","wikipedia":"fr:Pont-Périt","heritage:operator":"mhs","mhs:inscription_date":"1995-04-10","historic:civilization":"roman"}},"place_id":"51d8e033c81387fe3f59aa0e8c7736ff4640f00102f9014cd0c50a0000000092030b506f6e742d50c3a9726974"},"geometry":{"type":"Point","coordinates":[1.90797785,45.99384970034346]}},{"type":"Feature","properties":{"name":"Château
+        de la Chassagne","street":"D 10","suburb":"Le Lac","city":"Saint-Hilaire-le-Château","municipality":"Guéret","county":"Creuse","state":"New
+        Aquitaine","region":"Metropolitan France","postcode":"23250","country":"France","country_code":"fr","lon":1.9152564747277359,"lat":45.96801605,"formatted":"Château
+        de la Chassagne, D 10, 23250 Saint-Hilaire-le-Château, France","address_line1":"Château
+        de la Chassagne","address_line2":"D 10, 23250 Saint-Hilaire-le-Château, France","categories":["building","building.historic","tourism","tourism.sights","tourism.sights.castle"],"details":["details.historic","details.wiki_and_media"],"datasource":{"sourcename":"openstreetmap","attribution":"©
+        OpenStreetMap contributors","license":"Open Database Licence","url":"https://www.openstreetmap.org/copyright","raw":{"name":"Château
+        de la Chassagne","osm_id":182060093,"building":"yes","historic":"castle","osm_type":"w","wikidata":"Q2971182","wikipedia":"fr:Château
+        de la Chassagne","castle_type":"chateau"}},"place_id":"51b33ab1d6cfa4fe3f599a438c5ae8fb4640f00102f9013d04da0a000000009203184368c3a274656175206465206c6120436861737361676e65"},"geometry":{"type":"Point","coordinates":[1.9152372728746456,45.968028372276606]}},{"type":"Feature","properties":{"name":"Église
+        de l''Invention-des-Reliques-de-Saint-Étienne","street":"Chemin de Derrière
+        l''Église","suburb":"Le Compeix","city":"Saint-Pierre-Bellevue","municipality":"Guéret","county":"Creuse","state":"New
+        Aquitaine","region":"Metropolitan France","postcode":"23460","country":"France","country_code":"fr","lon":1.8689942725737123,"lat":45.89693115,"formatted":"Église
+        de l''Invention-des-Reliques-de-Saint-Étienne, Chemin de Derrière l''Église,
+        23460 Saint-Pierre-Bellevue, France","address_line1":"Église de l''Invention-des-Reliques-de-Saint-Étienne","address_line2":"Chemin
+        de Derrière l''Église, 23460 Saint-Pierre-Bellevue, France","categories":["heritage","tourism","tourism.sights","tourism.sights.place_of_worship"],"details":["details.heritage","details.place_of_worship","details.wiki_and_media"],"datasource":{"sourcename":"openstreetmap","attribution":"©
+        OpenStreetMap contributors","license":"Open Database Licence","url":"https://www.openstreetmap.org/copyright","raw":{"name":"Église
+        de l''Invention-des-Reliques-de-Saint-Étienne","osm_id":182218529,"amenity":"place_of_worship","ref:mhs":"PA00100185","heritage":3,"historic":"heritage","osm_type":"w","religion":"christian","wikidata":"Q22951436","wikipedia":"fr:Église
+        du Compeix","denomination":"catholic","heritage:operator":"mhs","mhs:inscription_date":"1988-11-15"}},"place_id":"51be0ce87662e7fd3f59fee9769ecef24640f00102f901216fdc0a00000000920335c389676c697365206465206c27496e76656e74696f6e2d6465732d52656c69717565732d64652d5361696e742dc3897469656e6e65"},"geometry":{"type":"Point","coordinates":[1.8689903874190317,45.89693051153516]}},{"type":"Feature","properties":{"name":"Sanctuaire
+        Gallo-romain du Puy Lautard","street":"D 37","city":"Vidaillat","municipality":"Guéret","county":"Creuse","state":"New
+        Aquitaine","region":"Metropolitan France","postcode":"23250","country":"France","country_code":"fr","lon":1.8700039557192083,"lat":45.92976195,"formatted":"Sanctuaire
+        Gallo-romain du Puy Lautard, D 37, 23250 Vidaillat, France","address_line1":"Sanctuaire
+        Gallo-romain du Puy Lautard","address_line2":"D 37, 23250 Vidaillat, France","categories":["heritage","tourism","tourism.sights","tourism.sights.archaeological_site"],"details":["details.heritage","details.wiki_and_media"],"datasource":{"sourcename":"openstreetmap","attribution":"©
+        OpenStreetMap contributors","license":"Open Database Licence","url":"https://www.openstreetmap.org/copyright","raw":{"name":"Sanctuaire
+        Gallo-romain du Puy Lautard","osm_id":218647610,"ref:mhs":"PA00100186","heritage":2,"historic":"archaeological_site","osm_type":"w","wikidata":"Q22951437","wikipedia":"fr:Sanctuaire
+        gallo-romain du Puy-Lautard","heritage:operator":"mhs","mhs:inscription_date":"1988-08-12"}},"place_id":"511837caa481ebfd3f59f5833cf303f74640f00102f9013a4c080d0000000092032653616e637475616972652047616c6c6f2d726f6d61696e20647520507579204c617574617264"},"geometry":{"type":"Point","coordinates":[1.869996684752044,45.92980804877144]}},{"type":"Feature","properties":{"name":"Maison
+        dite du Bailli","street":"Rue Terrefume","suburb":"La Pomme","city":"Felletin","municipality":"Aubusson","county":"Creuse","state":"New
+        Aquitaine","region":"Metropolitan France","postcode":"23500","country":"France","country_code":"fr","lon":2.173460347623089,"lat":45.8827085,"formatted":"Maison
+        dite du Bailli, Rue Terrefume, 23500 Felletin, France","address_line1":"Maison
+        dite du Bailli","address_line2":"Rue Terrefume, 23500 Felletin, France","categories":["building","building.historic","building.residential","heritage","tourism","tourism.sights"],"details":["details.building","details.heritage","details.historic","details.wiki_and_media"],"datasource":{"sourcename":"openstreetmap","attribution":"©
+        OpenStreetMap contributors","license":"Open Database Licence","url":"https://www.openstreetmap.org/copyright","raw":{"name":"Maison
+        dite du Bailli","osm_id":219939441,"ref:mhs":"PA00100071","building":"house","heritage":3,"historic":"building","osm_type":"w","wikidata":"Q22951326","start_date":"C15","heritage:operator":"mhs","mhs:inscription_date":"1965-05-24"}},"place_id":"5118e7ad6a3b63014059887422aafcf04640f00102f90171021c0d000000009203154d6169736f6e2064697465206475204261696c6c69"},"geometry":{"type":"Point","coordinates":[2.173453172142114,45.88271071131118]}},{"type":"Feature","properties":{"name":"Vestiges
+        du château","street":"Rue du Chapitre","suburb":"Les Mairies","city":"Aubusson","municipality":"Aubusson","county":"Creuse","state":"New
+        Aquitaine","region":"Metropolitan France","postcode":"23200","country":"France","country_code":"fr","lon":2.1718910679120444,"lat":45.95621195,"formatted":"Vestiges
+        du château, Rue du Chapitre, 23200 Aubusson, France","address_line1":"Vestiges
+        du château","address_line2":"Rue du Chapitre, 23200 Aubusson, France","categories":["building","building.historic","heritage","tourism","tourism.sights","tourism.sights.castle"],"details":["details.heritage","details.wiki_and_media"],"datasource":{"sourcename":"openstreetmap","attribution":"©
+        OpenStreetMap contributors","license":"Open Database Licence","url":"https://www.openstreetmap.org/copyright","raw":{"name":"Vestiges
+        du château","osm_id":220465257,"ref:mhs":"PA00099990","building":"yes","heritage":3,"historic":"castle","osm_type":"w","wikidata":"Q22951248","wikipedia":"fr:Château
+        d''Aubusson","heritage:operator":"mhs","mhs:inscription_date":"1964-02-08"}},"place_id":"51944df1e6d65f014059ca1d832165fa4640f00102f9016908240d000000009203145665737469676573206475206368c3a274656175"},"geometry":{"type":"Point","coordinates":[2.171796612013802,45.956211270352995]}},{"type":"Feature","properties":{"name":"Fontaine","street":"Place
+        de la Mairie","suburb":"Les Pradeaux","city":"Ahun","municipality":"Guéret","county":"Creuse","state":"New
+        Aquitaine","region":"Metropolitan France","postcode":"23150","country":"France","country_code":"fr","lon":2.0451955434756743,"lat":46.08648685,"formatted":"Fontaine,
+        Place de la Mairie, 23150 Ahun, France","address_line1":"Fontaine","address_line2":"Place
+        de la Mairie, 23150 Ahun, France","categories":["heritage","tourism","tourism.attraction.fountain","tourism.sights"],"details":["details.heritage","details.wiki_and_media"],"datasource":{"sourcename":"openstreetmap","attribution":"©
+        OpenStreetMap contributors","license":"Open Database Licence","url":"https://www.openstreetmap.org/copyright","raw":{"name":"Fontaine","osm_id":220538287,"amenity":"fountain","ref:mhs":"PA00099983","heritage":3,"historic":"heritage","osm_type":"w","wikidata":"Q22951243","heritage:operator":"mhs","mhs:inscription_date":"1926-06-15"}},"place_id":"51f56bc7778f5c004059d5fb68f9110b4740f00102f901af25250d00000000920308466f6e7461696e65"},"geometry":{"type":"Point","coordinates":[2.0451955182775188,46.08648603082808]}},{"type":"Feature","properties":{"name":"Château","street":"Rue
+        Antoine d''Aubusson","suburb":"Font Froide","city":"Pontarion","municipality":"Guéret","county":"Creuse","state":"New
+        Aquitaine","region":"Metropolitan France","postcode":"23250","country":"France","country_code":"fr","lon":1.8478573882015328,"lat":45.99644615,"formatted":"Château,
+        Rue Antoine d''Aubusson, 23250 Pontarion, France","address_line1":"Château","address_line2":"Rue
+        Antoine d''Aubusson, 23250 Pontarion, France","categories":["building","building.historic","heritage","tourism","tourism.sights"],"details":["details.heritage","details.wiki_and_media"],"datasource":{"sourcename":"openstreetmap","attribution":"©
+        OpenStreetMap contributors","license":"Open Database Licence","url":"https://www.openstreetmap.org/copyright","raw":{"name":"Château","osm_id":221515717,"ref:mhs":"PA00100132","building":"yes","heritage":3,"historic":"heritage","osm_type":"w","wikidata":"Q22951389","wikipedia":"fr:Château
+        de Pontarion","heritage:operator":"mhs","mhs:inscription_date":"1941-10-29"}},"place_id":"51a714716c3391fd3f593b0ddffb8aff4640f00102f901c50f340d000000009203084368c3a274656175"},"geometry":{"type":"Point","coordinates":[1.8479494319920293,45.99642895117946]}},{"type":"Feature","properties":{"name":"Maison
+        à pans de bois et encorbellement","street":"Rue Chateaufavier","suburb":"Les
+        Mairies","city":"Aubusson","municipality":"Aubusson","county":"Creuse","state":"New
+        Aquitaine","region":"Metropolitan France","postcode":"23200","country":"France","country_code":"fr","lon":2.1722694142857177,"lat":45.957608,"formatted":"Maison
+        à pans de bois et encorbellement, Rue Chateaufavier, 23200 Aubusson, France","address_line1":"Maison
+        à pans de bois et encorbellement","address_line2":"Rue Chateaufavier, 23200
+        Aubusson, France","categories":["building","building.historic","heritage","tourism","tourism.sights"],"details":["details.heritage","details.wiki_and_media"],"datasource":{"sourcename":"openstreetmap","attribution":"©
+        OpenStreetMap contributors","license":"Open Database Licence","url":"https://www.openstreetmap.org/copyright","raw":{"name":"Maison
+        à pans de bois et encorbellement","osm_id":225392425,"ref:mhs":"PA00099994","building":"yes","heritage":3,"historic":"yes","osm_type":"w","wikidata":"Q22951252","wikipedia":"fr:Maison
+        à pans de bois et encorbellement","heritage:operator":"mhs","mhs:inscription_date":"1961-04-26"}},"place_id":"51f9463694d0600140596ee2aae692fa4640f00102f90129376f0d000000009203284d6169736f6e20c3a02070616e7320646520626f697320657420656e636f7262656c6c656d656e74"},"geometry":{"type":"Point","coordinates":[2.172272832781229,45.95760806411714]}},{"type":"Feature","properties":{"name":"Pont
+        de la Terrade","street":"D 53","suburb":"Les Granges","city":"Aubusson","municipality":"Aubusson","county":"Creuse","state":"New
+        Aquitaine","region":"Metropolitan France","postcode":"23200","country":"France","country_code":"fr","lon":2.1673335,"lat":45.9572578,"formatted":"Pont
+        de la Terrade, D 53, 23200 Aubusson, France","address_line1":"Pont de la Terrade","address_line2":"D
+        53, 23200 Aubusson, France","categories":["heritage","highway","highway.tertiary","tourism","tourism.sights","tourism.sights.bridge"],"details":["details.heritage","details.wiki_and_media"],"datasource":{"sourcename":"openstreetmap","attribution":"©
+        OpenStreetMap contributors","license":"Open Database Licence","url":"https://www.openstreetmap.org/copyright","raw":{"ref":"D
+        53","name":"Pont de la Terrade","layer":1,"bridge":"yes","osm_id":225477460,"highway":"tertiary","ref:mhs":"PA00099997","z_order":340,"heritage":3,"historic":"heritage","osm_type":"w","wikidata":"Q3397296","wikipedia":"fr:Pont
+        sur la Terrade","heritage:operator":"mhs","mhs:inscription_date":"1926-06-15"}},"place_id":"51b74fd88f5e5601405996a5e07888fa4640f00102f9015483700d00000000920312506f6e74206465206c612054657272616465"},"geometry":{"type":"Point","coordinates":[2.1671725499999996,45.95728980034907]}},{"type":"Feature","properties":{"name":"Château
+        de Massenon","street":"D 16","suburb":"Le Puy","city":"Ahun","municipality":"Guéret","county":"Creuse","state":"New
+        Aquitaine","region":"Metropolitan France","postcode":"23150","country":"France","country_code":"fr","lon":2.0373384070432,"lat":46.06157,"formatted":"Château
+        de Massenon, D 16, 23150 Ahun, France","address_line1":"Château de Massenon","address_line2":"D
+        16, 23150 Ahun, France","categories":["access_limited","access_limited.private","building","building.historic","heritage","tourism","tourism.sights","tourism.sights.castle"],"details":["details.building","details.heritage","details.historic","details.wiki_and_media"],"datasource":{"sourcename":"openstreetmap","attribution":"©
+        OpenStreetMap contributors","license":"Open Database Licence","url":"https://www.openstreetmap.org/copyright","raw":{"name":"Château
+        de Massenon","access":"private","osm_id":228542602,"ref:mhs":"PA00099981","building":"yes","heritage":2,"historic":"castle","osm_type":"w","wikidata":"Q2969829","wikipedia":"fr:Château
+        de Massenon","start_date":"C15","heritage:operator":"mhs","mhs:inscription_date":"1986-11-18"}},"place_id":"5139fde6be494c004059a98cd9f7e0074740f00102f9018a489f0d000000009203144368c3a274656175206465204d617373656e6f6e"},"geometry":{"type":"Point","coordinates":[2.037250033783178,46.06155298349888]}},{"type":"Feature","properties":{"name":"Château
+        de Chantemille","street":"Chantemille","suburb":"Chantemile","city":"Ahun","municipality":"Guéret","county":"Creuse","state":"New
+        Aquitaine","region":"Metropolitan France","postcode":"23150","country":"France","country_code":"fr","lon":2.041178321874999,"lat":46.1106065,"formatted":"Château
+        de Chantemille, Chantemille, 23150 Ahun, France","address_line1":"Château
+        de Chantemille","address_line2":"Chantemille, 23150 Ahun, France","categories":["building","building.historic","heritage","tourism","tourism.sights","tourism.sights.castle"],"details":["details.heritage","details.wiki_and_media"],"datasource":{"sourcename":"openstreetmap","attribution":"©
+        OpenStreetMap contributors","license":"Open Database Licence","url":"https://www.openstreetmap.org/copyright","raw":{"name":"Château
+        de Chantemille","osm_id":228543573,"ref:mhs":"PA00099979","building":"yes","heritage":3,"historic":"castle","osm_type":"w","wikidata":"Q947479","wikipedia":"fr:Château
+        de Chantemille","heritage:operator":"mhs","mhs:inscription_date":"2000-03-28"}},"place_id":"514f88f0ed6e54004059459509c5290e4740f00102f901554c9f0d000000009203174368c3a274656175206465204368616e74656d696c6c65"},"geometry":{"type":"Point","coordinates":[2.0412272061376266,46.11064970939564]}},{"type":"Feature","properties":{"name":"Tour
+        Zizim","street":"Avenue du Docteur Butaud","suburb":"Les Bordes","hamlet":"Chez
+        Gayaud","city":"Bourganeuf","municipality":"Guéret","county":"Creuse","state":"New
+        Aquitaine","region":"Metropolitan France","postcode":"23400","country":"France","country_code":"fr","lon":1.7567091963389123,"lat":45.95390705,"formatted":"Tour
+        Zizim, Avenue du Docteur Butaud, 23400 Bourganeuf, France","address_line1":"Tour
+        Zizim","address_line2":"Avenue du Docteur Butaud, 23400 Bourganeuf, France","categories":["building","building.historic","tourism","tourism.sights","tourism.sights.castle"],"details":["details.wiki_and_media"],"datasource":{"sourcename":"openstreetmap","attribution":"©
+        OpenStreetMap contributors","license":"Open Database Licence","url":"https://www.openstreetmap.org/copyright","raw":{"name":"Tour
+        Zizim","osm_id":230312351,"building":"yes","historic":"castle","osm_type":"w","wikidata":"Q3533218","wikipedia":"fr:Tour
+        Zizim"}},"place_id":"51282d1f387b1bfc3f59b12627f419fa4640f00102f9019f49ba0d0000000092030a546f7572205a697a696d"},"geometry":{"type":"Point","coordinates":[1.756709307885851,45.953917044750945]}},{"type":"Feature","properties":{"name":"Château
+        de Beaumont","street":"D 17","suburb":"Beaumont","city":"Saint-Yrieix-les-Bois","municipality":"Guéret","county":"Creuse","state":"New
+        Aquitaine","region":"Metropolitan France","postcode":"23150","country":"France","country_code":"fr","lon":1.9448063091719776,"lat":46.107983950000005,"formatted":"Château
+        de Beaumont, D 17, 23150 Saint-Yrieix-les-Bois, France","address_line1":"Château
+        de Beaumont","address_line2":"D 17, 23150 Saint-Yrieix-les-Bois, France","categories":["access_limited","access_limited.private","building","building.historic","tourism","tourism.sights","tourism.sights.castle"],"details":["details.historic","details.wiki_and_media"],"datasource":{"sourcename":"openstreetmap","attribution":"©
+        OpenStreetMap contributors","license":"Open Database Licence","url":"https://www.openstreetmap.org/copyright","raw":{"name":"Château
+        de Beaumont","access":"private","osm_id":235056206,"building":"yes","historic":"castle","osm_type":"w","wikipedia":"fr:Château
+        de Beaumont (Saint-Yrieix-les-Bois)","castle_type":"chateau"}},"place_id":"5102c8f0e4e91dff3f59d81cce21d20d4740f00102f9014eac020e000000009203144368c3a27465617520646520426561756d6f6e74"},"geometry":{"type":"Point","coordinates":[1.9448031371107395,46.1079752212915]}}]}'
+  recorded_at: Mon, 14 Nov 2022 17:04:05 GMT
 recorded_with: VCR 6.1.0
