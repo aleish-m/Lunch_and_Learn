@@ -31,5 +31,39 @@ RSpec.describe CountryFacade do
         end
       end
     end
+
+    describe '#find_country_location' do
+      it 'can find the latitude and longitude location for a provided country', :vcr do
+        location = CountryFacade.find_country_location('Latvia')
+
+        expect(location).to be_a(Hash)
+        expect(location.count).to eq(2)
+        expect(location).to have_key(:lat)
+        expect(location).to have_key(:lng)
+        expect(location[:lat]).to be_a(Numeric)
+        expect(location[:lng]).to be_a(Numeric)
+
+        expect(location).to_not have_key(:name)
+        expect(location).to_not have_key(:currencies)
+        expect(location).to_not have_key(:capital)
+        expect(location).to_not have_key(:population)
+      end
+
+      it 'can find the latitude and longitude location for a provided country when country name is multiple words', :vcr do
+        location = CountryFacade.find_country_location('New Zealand')
+
+        expect(location).to be_a(Hash)
+        expect(location.count).to eq(2)
+        expect(location).to have_key(:lat)
+        expect(location).to have_key(:lng)
+        expect(location[:lat]).to be_a(Numeric)
+        expect(location[:lng]).to be_a(Numeric)
+
+        expect(location).to_not have_key(:name)
+        expect(location).to_not have_key(:currencies)
+        expect(location).to_not have_key(:capital)
+        expect(location).to_not have_key(:population)
+      end
+    end
   end
 end
