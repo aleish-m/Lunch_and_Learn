@@ -1,0 +1,230 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/search?channelId=<mr_history_id>&key=<youtube_api_key>&part=snippet&q=thailand
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Vary:
+      - Origin
+      - Referer
+      - X-Origin
+      Date:
+      - Sun, 13 Nov 2022 23:51:52 GMT
+      Server:
+      - scaffolding on HTTPServer2
+      Cache-Control:
+      - private
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443";
+        ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: |
+        {
+          "kind": "youtube#searchListResponse",
+          "etag": "fVu7Ruescrq5v2yZiddssqABc1I",
+          "nextPageToken": "CAUQAA",
+          "regionCode": "US",
+          "pageInfo": {
+            "totalResults": 9,
+            "resultsPerPage": 5
+          },
+          "items": [
+            {
+              "kind": "youtube#searchResult",
+              "etag": "g_AANaDO0PP_y9-nAEiKyK7DquE",
+              "id": {
+                "kind": "youtube#video",
+                "videoId": "uw8hjVqxMXw"
+              },
+              "snippet": {
+                "publishedAt": "2021-08-29T10:13:10Z",
+                "channelId": "<mr_history_id>",
+                "title": "A Super Quick History of Laos",
+                "description": "Audio Requiring Attribution: LukeIRL: https://freesound.org/people/LukeIRL/sounds/176134/ RTB45: ...",
+                "thumbnails": {
+                  "default": {
+                    "url": "https://i.ytimg.com/vi/uw8hjVqxMXw/default.jpg",
+                    "width": 120,
+                    "height": 90
+                  },
+                  "medium": {
+                    "url": "https://i.ytimg.com/vi/uw8hjVqxMXw/mqdefault.jpg",
+                    "width": 320,
+                    "height": 180
+                  },
+                  "high": {
+                    "url": "https://i.ytimg.com/vi/uw8hjVqxMXw/hqdefault.jpg",
+                    "width": 480,
+                    "height": 360
+                  }
+                },
+                "channelTitle": "Mr History",
+                "liveBroadcastContent": "none",
+                "publishTime": "2021-08-29T10:13:10Z"
+              }
+            },
+            {
+              "kind": "youtube#searchResult",
+              "etag": "h4pHyg_vEMULibkOlCKIxId3udI",
+              "id": {
+                "kind": "youtube#video",
+                "videoId": "s31ymVzOfGY"
+              },
+              "snippet": {
+                "publishedAt": "2019-09-24T08:31:33Z",
+                "channelId": "<mr_history_id>",
+                "title": "15 Things Not From the Country You Think",
+                "description": "MrHistory.",
+                "thumbnails": {
+                  "default": {
+                    "url": "https://i.ytimg.com/vi/s31ymVzOfGY/default.jpg",
+                    "width": 120,
+                    "height": 90
+                  },
+                  "medium": {
+                    "url": "https://i.ytimg.com/vi/s31ymVzOfGY/mqdefault.jpg",
+                    "width": 320,
+                    "height": 180
+                  },
+                  "high": {
+                    "url": "https://i.ytimg.com/vi/s31ymVzOfGY/hqdefault.jpg",
+                    "width": 480,
+                    "height": 360
+                  }
+                },
+                "channelTitle": "Mr History",
+                "liveBroadcastContent": "none",
+                "publishTime": "2019-09-24T08:31:33Z"
+              }
+            },
+            {
+              "kind": "youtube#searchResult",
+              "etag": "WdS7AaDrG8Wl5KejEV8P27rkB8I",
+              "id": {
+                "kind": "youtube#video",
+                "videoId": "m4DA0sm9hiE"
+              },
+              "snippet": {
+                "publishedAt": "2019-09-30T19:58:33Z",
+                "channelId": "<mr_history_id>",
+                "title": "A Super Quick History of Cambodia",
+                "description": "Sources: “A History of Cambodia” (2008) by David Chandler, Westview Press, Philadelphia, PA.",
+                "thumbnails": {
+                  "default": {
+                    "url": "https://i.ytimg.com/vi/m4DA0sm9hiE/default.jpg",
+                    "width": 120,
+                    "height": 90
+                  },
+                  "medium": {
+                    "url": "https://i.ytimg.com/vi/m4DA0sm9hiE/mqdefault.jpg",
+                    "width": 320,
+                    "height": 180
+                  },
+                  "high": {
+                    "url": "https://i.ytimg.com/vi/m4DA0sm9hiE/hqdefault.jpg",
+                    "width": 480,
+                    "height": 360
+                  }
+                },
+                "channelTitle": "Mr History",
+                "liveBroadcastContent": "none",
+                "publishTime": "2019-09-30T19:58:33Z"
+              }
+            },
+            {
+              "kind": "youtube#searchResult",
+              "etag": "qNOXiNafgoiows9ZkPjksmv3IRM",
+              "id": {
+                "kind": "youtube#video",
+                "videoId": "eXSs0QJ3Dww"
+              },
+              "snippet": {
+                "publishedAt": "2022-05-04T05:56:51Z",
+                "channelId": "<mr_history_id>",
+                "title": "A Super Quick History of Myanmar (AKA Burma)",
+                "description": "Pictures Requiring Attribution: Davidsnique: ...",
+                "thumbnails": {
+                  "default": {
+                    "url": "https://i.ytimg.com/vi/eXSs0QJ3Dww/default.jpg",
+                    "width": 120,
+                    "height": 90
+                  },
+                  "medium": {
+                    "url": "https://i.ytimg.com/vi/eXSs0QJ3Dww/mqdefault.jpg",
+                    "width": 320,
+                    "height": 180
+                  },
+                  "high": {
+                    "url": "https://i.ytimg.com/vi/eXSs0QJ3Dww/hqdefault.jpg",
+                    "width": 480,
+                    "height": 360
+                  }
+                },
+                "channelTitle": "Mr History",
+                "liveBroadcastContent": "none",
+                "publishTime": "2022-05-04T05:56:51Z"
+              }
+            },
+            {
+              "kind": "youtube#searchResult",
+              "etag": "u_r_wAly66Ni9ACjp8KJU3SPZLA",
+              "id": {
+                "kind": "youtube#video",
+                "videoId": "2C25cTQF2jw"
+              },
+              "snippet": {
+                "publishedAt": "2020-04-19T10:39:13Z",
+                "channelId": "<mr_history_id>",
+                "title": "A Super Quick History of Egypt",
+                "description": "Sources: \"A History of Ancient Egypt\" by Marc Van De Mieroop (2011) Wiley-Blackwell, Sussex, UK. \"A History of Egypt: From the ...",
+                "thumbnails": {
+                  "default": {
+                    "url": "https://i.ytimg.com/vi/2C25cTQF2jw/default.jpg",
+                    "width": 120,
+                    "height": 90
+                  },
+                  "medium": {
+                    "url": "https://i.ytimg.com/vi/2C25cTQF2jw/mqdefault.jpg",
+                    "width": 320,
+                    "height": 180
+                  },
+                  "high": {
+                    "url": "https://i.ytimg.com/vi/2C25cTQF2jw/hqdefault.jpg",
+                    "width": 480,
+                    "height": 360
+                  }
+                },
+                "channelTitle": "Mr History",
+                "liveBroadcastContent": "none",
+                "publishTime": "2020-04-19T10:39:13Z"
+              }
+            }
+          ]
+        }
+  recorded_at: Sun, 13 Nov 2022 23:51:52 GMT
+recorded_with: VCR 6.1.0

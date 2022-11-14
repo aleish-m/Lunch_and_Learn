@@ -1,0 +1,138 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/search?channelId=<mr_history_id>&key=<youtube_api_key>&part=snippet&q=Usbekistan
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Vary:
+      - Origin
+      - Referer
+      - X-Origin
+      Date:
+      - Sun, 13 Nov 2022 21:58:15 GMT
+      Server:
+      - scaffolding on HTTPServer2
+      Cache-Control:
+      - private
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443";
+        ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: |
+        {
+          "kind": "youtube#searchListResponse",
+          "etag": "UBAOiXjvY0CZ7Ub9tJDO9bUtsU8",
+          "regionCode": "US",
+          "pageInfo": {
+            "totalResults": 0,
+            "resultsPerPage": 0
+          },
+          "items": []
+        }
+  recorded_at: Sun, 13 Nov 2022 21:58:15 GMT
+- request:
+    method: get
+    uri: https://api.unsplash.com/search/photos?client_id=<unsplash_api_key>&query=Usbekistan
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '57'
+      Server:
+      - Cowboy
+      Content-Type:
+      - application/json
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Request-Method:
+      - "*"
+      Access-Control-Allow-Headers:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Link,X-Total,X-Per-Page,X-RateLimit-Limit,X-RateLimit-Remaining
+      Cache-Control:
+      - max-age=86400,stale-if-error=3600,stale-while-revalidate=60
+      X-Unsplash-Version:
+      - v1
+      Warning:
+      - The tags property in this endpoint is deprecated. https://changelog.unsplash.com/deprecations/2021/07/12/tags-search-deprecation.html
+      X-Total:
+      - '0'
+      X-Per-Page:
+      - '10'
+      Content-Language:
+      - en
+      Etag:
+      - W/"7814e74bfa62dcc505522924e3c8cf4b"
+      X-Ratelimit-Limit:
+      - '50'
+      X-Ratelimit-Remaining:
+      - '48'
+      X-Request-Id:
+      - 1256fb66-bb45-4745-8c6a-7fa751faa14b
+      X-Runtime:
+      - '0.030669'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Via:
+      - 1.1 vegur, 1.1 varnish, 1.1 varnish
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Sun, 13 Nov 2022 21:58:15 GMT
+      Age:
+      - '51934'
+      X-Served-By:
+      - cache-iad-kcgs7200029-IAD, cache-den8244-DEN
+      X-Cache:
+      - MISS, HIT
+      X-Cache-Hits:
+      - 0, 1
+      X-Timer:
+      - S1668376696.933441,VS0,VE12
+      Vary:
+      - Accept-Encoding, Origin,Authorization,Accept-Language,client-geo-region,Accept
+    body:
+      encoding: UTF-8
+      string: '{"total":0,"total_pages":0,"results":[]}'
+  recorded_at: Sun, 13 Nov 2022 21:58:15 GMT
+recorded_with: VCR 6.1.0
