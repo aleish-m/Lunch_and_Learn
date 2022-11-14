@@ -3,7 +3,7 @@ class Api::V1::TouristSightsController < ApplicationController
     country = country_params[:country]
     location = CountryFacade.find_country_location(country)
     sights = PlacesFacade.find_tourist_sights(location[0],location[1])
-    render json: TouristSightsSerializer(sights)
+    render json: TouristSightSerializer.new(sights)
   end
 
   private
