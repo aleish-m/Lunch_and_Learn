@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe PlacesService do
   describe 'get tourist sights API endpoint' do
     it 'can get all tourist sights for a given country', :vcr do
-      tourist_sights_data = PlacesService.get_tourist_sights(-41.0, 174.0)
+      tourist_sights_data = PlacesService.get_tourist_sights(25.0, 57.0)
 
       expect(tourist_sights_data).to be_a(Hash)
       expect(tourist_sights_data).to have_key(:features)
@@ -18,8 +18,8 @@ RSpec.describe PlacesService do
         expect(tourist_sight).to have_key(:properties)
         expect(tourist_sight[:properties]).to be_a(Hash)
 
-        expect(tourist_sight[:properties]).to have_key(:street)
-        expect(tourist_sight[:properties][:street]).to be_a(String)
+        expect(tourist_sight[:properties]).to have_key(:name)
+        expect(tourist_sight[:properties][:name]).to be_a(String)
 
         expect(tourist_sight[:properties]).to have_key(:address_line2)
         expect(tourist_sight[:properties][:address_line2]).to be_a(String)

@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.geoapify.com/v2/places?apiKey=<places_api_key>&categories=tourism.sights&filter=circle:174.0,-41.0,20000
+    uri: https://api.geoapify.com/v2/places?apiKey=<places_api_key>&categories=tourism.sights&filter=circle:57.0,25.0,20000
     body:
       encoding: US-ASCII
       string: ''
@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Mon, 14 Nov 2022 18:46:41 GMT
+      - Mon, 14 Nov 2022 19:06:09 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -49,53 +49,17 @@ http_interactions:
       Cf-Cache-Status:
       - DYNAMIC
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=GqLYDtl0t7nYB2HjJqYPZORgOsj0xcpk5aKbIYFxlEYGiCedWTfb5dw%2B32Kc3jzHj0s5gNMAq0sAb1V2X5LufXFb05bxt5lTRVFoWjMRdloz6F35ZrOtu6vXo3wwFvqc868%3D"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=Gb6ktmhFx2l2KuBnjqRMoG0lso4%2BStj7aqj9jpA7SgkPLhlHTenccL0KebNvADXzSp%2F7kxOEcEwx8iLzfBZ6RG38mBV151kxo%2B7autrzeQ1vtTJ09qOaIZwhnor%2FI0%2FXMxU%3D"}],"group":"cf-nel","max_age":604800}'
       Nel:
       - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
       Server:
       - cloudflare
       Cf-Ray:
-      - 76a1e947db085a46-IAD
+      - 76a205cbdbb724df-SJC
       Alt-Svc:
       - h3=":443"; ma=86400, h3-29=":443"; ma=86400
     body:
       encoding: UTF-8
-      string: '{"type":"FeatureCollection","features":[{"type":"Feature","properties":{"name":"Historic
-        gun emplacement","street":"Bulwer Road","state":"Marlborough","country":"New
-        Zealand","country_code":"nz","lon":173.9955635,"lat":-40.9694175,"formatted":"Historic
-        gun emplacement, Bulwer Road, New Zealand","address_line1":"Historic gun emplacement","address_line2":"Bulwer
-        Road, New Zealand","categories":["tourism","tourism.sights","tourism.sights.ruines"],"details":["details.historic"],"datasource":{"sourcename":"openstreetmap","attribution":"©
-        OpenStreetMap contributors","license":"Open Database Licence","url":"https://www.openstreetmap.org/copyright","raw":{"name":"Historic
-        gun emplacement","osm_id":5830971518,"historic":"ruins","osm_type":"n","historic:civilization":"modern"}},"place_id":"51ed32fca7dbbf654059798267df157c44c0f00103f9017e908d5b01000000920318486973746f7269632067756e20656d706c6163656d656e74"},"geometry":{"type":"Point","coordinates":[173.99556350000003,-40.969417501012636]}},{"type":"Feature","properties":{"street":"Waitata
-        Road","state":"Marlborough","postcode":"7193","country":"New Zealand","country_code":"nz","lon":173.9058015334395,"lat":-41.0169375,"formatted":"Waitata
-        Road, 7193, New Zealand","address_line1":"Waitata Road","address_line2":"7193,
-        New Zealand","categories":["building","building.historic","building.military","tourism","tourism.sights"],"details":["details.historic"],"datasource":{"sourcename":"openstreetmap","attribution":"©
-        OpenStreetMap contributors","license":"Open Database Licence","url":"https://www.openstreetmap.org/copyright","raw":{"osm_id":987533419,"building":"bunker","historic":"yes","military":"bunker","osm_type":"w","bunker_type":"gun_emplacement"}},"place_id":"516ed8ad50fcbc6540594c4d3f3b2b8244c0f00102f9016b90dc3a00000000"},"geometry":{"type":"Point","coordinates":[173.905800189535,-41.01694431868472]}},{"type":"Feature","properties":{"street":"Clova
-        Bay Road","state":"Marlborough","country":"New Zealand","country_code":"nz","lon":174.0405953,"lat":-41.0149297,"formatted":"Clova
-        Bay Road, New Zealand","address_line1":"Clova Bay Road","address_line2":"New
-        Zealand","categories":["tourism","tourism.sights"],"details":[],"datasource":{"sourcename":"openstreetmap","attribution":"©
-        OpenStreetMap contributors","license":"Open Database Licence","url":"https://www.openstreetmap.org/copyright","raw":{"osm_id":1036801796,"historic":"wreck","osm_type":"n","wreck:type":"ship","seamark:type":"wreck","seamark:wreck:category":"hull_showing","ref:linz:hydrographic_id":4123270,"seamark:wreck:water_level":"covers"}},"place_id":"51e2bb838e4cc16540599ccc6837e98144c0f00103f9010457cc3d00000000"},"geometry":{"type":"Point","coordinates":[174.0405953,-41.01492970101501]}},{"type":"Feature","properties":{"street":"Clova
-        Bay Road","state":"Marlborough","country":"New Zealand","country_code":"nz","lon":174.0411626,"lat":-41.0160054,"formatted":"Clova
-        Bay Road, New Zealand","address_line1":"Clova Bay Road","address_line2":"New
-        Zealand","categories":["tourism","tourism.sights"],"details":[],"datasource":{"sourcename":"openstreetmap","attribution":"©
-        OpenStreetMap contributors","license":"Open Database Licence","url":"https://www.openstreetmap.org/copyright","raw":{"osm_id":1036801878,"historic":"wreck","osm_type":"n","wreck:type":"ship","seamark:type":"wreck","seamark:wreck:category":"hull_showing","ref:linz:hydrographic_id":71271,"seamark:wreck:water_level":"covers"}},"place_id":"512f9a3a3451c1654059a8f508770c8244c0f00103f9015657cc3d00000000"},"geometry":{"type":"Point","coordinates":[174.04116259999998,-41.01600540101509]}},{"type":"Feature","properties":{"street":"Waitata
-        Road","state":"Marlborough","postcode":"7193","country":"New Zealand","country_code":"nz","lon":173.9021109,"lat":-40.9763431,"formatted":"Waitata
-        Road, 7193, New Zealand","address_line1":"Waitata Road","address_line2":"7193,
-        New Zealand","categories":["tourism","tourism.sights"],"details":[],"datasource":{"sourcename":"openstreetmap","attribution":"©
-        OpenStreetMap contributors","license":"Open Database Licence","url":"https://www.openstreetmap.org/copyright","raw":{"osm_id":1036801948,"historic":"wreck","osm_type":"n","wreck:type":"ship","seamark:type":"wreck"}},"place_id":"51ae9bad17debc65405957438ccff87c44c0f00103f9019c57cc3d00000000"},"geometry":{"type":"Point","coordinates":[173.90211089999997,-40.97634310101301]}},{"type":"Feature","properties":{"street":"Croisilles
-        French Pass Road","suburb":"Elaine Bay","state":"Marlborough","postcode":"7195","country":"New
-        Zealand","country_code":"nz","lon":173.7816554,"lat":-40.999153,"formatted":"Croisilles
-        French Pass Road, Elaine Bay, 7195, New Zealand","address_line1":"Croisilles
-        French Pass Road","address_line2":"Elaine Bay, 7195, New Zealand","categories":["tourism","tourism.sights","tourism.sights.memorial"],"details":[],"datasource":{"sourcename":"openstreetmap","attribution":"©
-        OpenStreetMap contributors","license":"Open Database Licence","url":"https://www.openstreetmap.org/copyright","raw":{"osm_id":1225170825,"historic":"memorial","osm_type":"n"}},"place_id":"51bd772f5203b96540593687db3ee47f44c0f00103f901899f064900000000"},"geometry":{"type":"Point","coordinates":[173.7816554,-40.99915300101422]}},{"type":"Feature","properties":{"street":"Croisilles
-        French Pass Road","suburb":"French Pass (Anaru)","state":"Marlborough","country":"New
-        Zealand","country_code":"nz","lon":173.8427361,"lat":-40.9237239,"formatted":"Croisilles
-        French Pass Road, French Pass (Anaru), New Zealand","address_line1":"Croisilles
-        French Pass Road","address_line2":"French Pass (Anaru), New Zealand","categories":["tourism","tourism.sights","tourism.sights.memorial"],"details":[],"datasource":{"sourcename":"openstreetmap","attribution":"©
-        OpenStreetMap contributors","license":"Open Database Licence","url":"https://www.openstreetmap.org/copyright","raw":{"osm_id":1225171448,"historic":"memorial","osm_type":"n"}},"place_id":"511395b2b1f7ba65405992afb4953c7644c0f00103f901f8a1064900000000"},"geometry":{"type":"Point","coordinates":[173.8427361,-40.923723901010035]}},{"type":"Feature","properties":{"street":"Antimony
-        Mine Track","state":"Marlborough","country":"New Zealand","country_code":"nz","lon":174.2029526,"lat":-41.0485958,"formatted":"Antimony
-        Mine Track, New Zealand","address_line1":"Antimony Mine Track","address_line2":"New
-        Zealand","categories":["tourism","tourism.sights"],"details":[],"datasource":{"sourcename":"openstreetmap","attribution":"©
-        OpenStreetMap contributors","license":"Open Database Licence","url":"https://www.openstreetmap.org/copyright","raw":{"depth":11.2,"osm_id":9236801064,"historic":"wreck","osm_type":"n","wreck:type":"ship","seamark:type":"wreck","depth:source_quality":"least_depth_known","seamark:wreck:category":"dangerous","ref:linz:hydrographic_id":7954939,"seamark:wreck:water_level":"submerged"}},"place_id":"516c7473967ec66540597a0b2063388644c0f00103f90128668e2602000000"},"geometry":{"type":"Point","coordinates":[174.2029526,-41.0485958010167]}}]}'
-  recorded_at: Mon, 14 Nov 2022 18:46:41 GMT
+      string: '{"type":"FeatureCollection","features":[]}'
+  recorded_at: Mon, 14 Nov 2022 19:06:09 GMT
 recorded_with: VCR 6.1.0
