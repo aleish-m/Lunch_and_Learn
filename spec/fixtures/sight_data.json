@@ -1,0 +1,52 @@
+{
+  "name": "Château de Boussac",
+  "street": "Chemin du Grand Moulin",
+  "city": "Boussac",
+  "municipality": "Aubusson",
+  "county": "Creuse",
+  "state": "New Aquitaine",
+  "region": "Metropolitan France",
+  "postcode": "23600",
+  "country": "France",
+  "country_code": "fr",
+  "lon": 2.2109618374853297,
+  "lat": 46.3479684,
+  "formatted": "Château de Boussac, Chemin du Grand Moulin, 23600 Boussac, France",
+  "address_line1": "Château de Boussac",
+  "address_line2": "Chemin du Grand Moulin, 23600 Boussac, France",
+  "categories": [
+    "building",
+    "building.historic",
+    "heritage",
+    "tourism",
+    "tourism.sights",
+    "tourism.sights.castle"
+  ],
+  "details": [
+    "details.contact",
+    "details.heritage",
+    "details.wiki_and_media"
+  ],
+  "datasource": {
+    "sourcename": "openstreetmap",
+    "attribution": "© OpenStreetMap contributors",
+    "license": "Open Database Licence",
+    "url": "https://www.openstreetmap.org/copyright",
+    "raw": {
+      "name": "Château de Boussac",
+      "email": "chateauboussac@orange.fr",
+      "phone": "+33555650762",
+      "osm_id": 189690871,
+      "ref:mhs": "PA00100017",
+      "building": "yes",
+      "heritage": 2,
+      "historic": "castle",
+      "osm_type": "w",
+      "wikidata": "Q2968636",
+      "wikipedia": "fr:Château de Boussac",
+      "heritage:operator": "mhs",
+      "mhs:inscription_date": "1930-07-25"
+    }
+  },
+  "place_id": "5122288c0611b0014059891c1a0c8a2c4740f00102f901f7734e0b000000009203134368c3a27465617520646520426f7573736163"
+}
