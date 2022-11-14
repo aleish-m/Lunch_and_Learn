@@ -1,0 +1,130 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://restcountries.com/v3.1/name/fran
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 14 Nov 2022 19:15:44 GMT
+      Server:
+      - Apache/2.4.38 (Debian)
+      Cache-Control:
+      - public, immutable, max-age=31556926
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '2016'
+    body:
+      encoding: UTF-8
+      string: '[{"name":{"common":"French Polynesia","official":"French Polynesia","nativeName":{"fra":{"official":"Polynésie
+        française","common":"Polynésie française"}}},"tld":[".pf"],"cca2":"PF","ccn3":"258","cca3":"PYF","independent":false,"status":"officially-assigned","unMember":false,"currencies":{"XPF":{"name":"CFP
+        franc","symbol":"₣"}},"idd":{"root":"+6","suffixes":["89"]},"capital":["Papeetē"],"altSpellings":["PF","Polynésie
+        française","French Polynesia","Pōrīnetia Farāni"],"region":"Oceania","subregion":"Polynesia","languages":{"fra":"French"},"translations":{"ara":{"official":"بولينزيا
+        الفرنسية","common":"بولينزيا الفرنسية"},"bre":{"official":"Polinezia C''hall","common":"Polinezia
+        C''hall"},"ces":{"official":"Francouzská Polynésie","common":"Francouzská
+        Polynésie"},"cym":{"official":"French Polynesia","common":"French Polynesia"},"deu":{"official":"Französisch-Polynesien","common":"Französisch-Polynesien"},"est":{"official":"Prantsuse
+        Polüneesia","common":"Prantsuse Polüneesia"},"fin":{"official":"Ranskan Polynesia","common":"Ranskan
+        Polynesia"},"fra":{"official":"Polynésie française","common":"Polynésie française"},"hrv":{"official":"Francuska
+        Polinezija","common":"Francuska Polinezija"},"hun":{"official":"Francia Polinézia","common":"Francia
+        Polinézia"},"ita":{"official":"Polinesia Francese","common":"Polinesia Francese"},"jpn":{"official":"フランス領ポリネシア","common":"フランス領ポリネシア"},"kor":{"official":"프랑스령
+        폴리네시아","common":"프랑스령 폴리네시아"},"nld":{"official":"Frans-Polynesië","common":"Frans-Polynesië"},"per":{"official":"پُلی‌نِزی
+        فرانسه","common":"پُلی‌نِزی فرانسه"},"pol":{"official":"Polinezja Francuska","common":"Polinezja
+        Francuska"},"por":{"official":"Polinésia Francesa","common":"Polinésia Francesa"},"rus":{"official":"Французская
+        Полинезия","common":"Французская Полинезия"},"slk":{"official":"Francúzska
+        Polynézia","common":"Francúzska Polynézia"},"spa":{"official":"Polinesia francés","common":"Polinesia
+        Francesa"},"swe":{"official":"Franska Polynesien","common":"Franska Polynesien"},"tur":{"official":"Fransız
+        Polinezyası","common":"Fransız Polinezyası"},"urd":{"official":"فرانسیسی پولینیشیا","common":"فرانسیسی
+        پولینیشیا"},"zho":{"official":"法属波利尼西亚","common":"法属波利尼西亚"}},"latlng":[17.6797,149.4068],"landlocked":false,"area":4167.0,"demonyms":{"eng":{"f":"French
+        Polynesian","m":"French Polynesian"},"fra":{"f":"Polynésienne","m":"Polynésien"}},"flag":"\uD83C\uDDF5\uD83C\uDDEB","maps":{"googleMaps":"https://goo.gl/maps/xgg6BQTRyeQg4e1m6","openStreetMaps":"https://www.openstreetmap.org/relation/3412620"},"population":280904,"car":{"signs":["F"],"side":"right"},"timezones":["UTC-10:00","UTC-09:30","UTC-09:00"],"continents":["Oceania"],"flags":{"png":"https://flagcdn.com/w320/pf.png","svg":"https://flagcdn.com/pf.svg"},"coatOfArms":{"png":"https://mainfacts.com/media/images/coats_of_arms/pf.png","svg":"https://mainfacts.com/media/images/coats_of_arms/pf.svg"},"startOfWeek":"monday","capitalInfo":{"latlng":[-17.53,-149.56]},"postalCode":{"format":"#####","regex":"^((97|98)7\\d{2})$"}},{"name":{"common":"France","official":"French
+        Republic","nativeName":{"fra":{"official":"République française","common":"France"}}},"tld":[".fr"],"cca2":"FR","ccn3":"250","cca3":"FRA","cioc":"FRA","independent":true,"status":"officially-assigned","unMember":true,"currencies":{"EUR":{"name":"Euro","symbol":"€"}},"idd":{"root":"+3","suffixes":["3"]},"capital":["Paris"],"altSpellings":["FR","French
+        Republic","République française"],"region":"Europe","subregion":"Western Europe","languages":{"fra":"French"},"translations":{"ara":{"official":"الجمهورية
+        الفرنسية","common":"فرنسا"},"bre":{"official":"Republik Frañs","common":"Frañs"},"ces":{"official":"Francouzská
+        republika","common":"Francie"},"cym":{"official":"French Republic","common":"France"},"deu":{"official":"Französische
+        Republik","common":"Frankreich"},"est":{"official":"Prantsuse Vabariik","common":"Prantsusmaa"},"fin":{"official":"Ranskan
+        tasavalta","common":"Ranska"},"fra":{"official":"République française","common":"France"},"hrv":{"official":"Francuska
+        Republika","common":"Francuska"},"hun":{"official":"Francia Köztársaság","common":"Franciaország"},"ita":{"official":"Repubblica
+        francese","common":"Francia"},"jpn":{"official":"フランス共和国","common":"フランス"},"kor":{"official":"프랑스
+        공화국","common":"프랑스"},"nld":{"official":"Franse Republiek","common":"Frankrijk"},"per":{"official":"جمهوری
+        فرانسه","common":"فرانسه"},"pol":{"official":"Republika Francuska","common":"Francja"},"por":{"official":"República
+        Francesa","common":"França"},"rus":{"official":"Французская Республика","common":"Франция"},"slk":{"official":"Francúzska
+        republika","common":"Francúzsko"},"spa":{"official":"República francés","common":"Francia"},"swe":{"official":"Republiken
+        Frankrike","common":"Frankrike"},"tur":{"official":"Fransa Cumhuriyeti","common":"Fransa"},"urd":{"official":"جمہوریہ
+        فرانس","common":"فرانس"},"zho":{"official":"法兰西共和国","common":"法国"}},"latlng":[46.0,2.0],"landlocked":false,"borders":["AND","BEL","DEU","ITA","LUX","MCO","ESP","CHE"],"area":551695.0,"demonyms":{"eng":{"f":"French","m":"French"},"fra":{"f":"Française","m":"Français"}},"flag":"\uD83C\uDDEB\uD83C\uDDF7","maps":{"googleMaps":"https://goo.gl/maps/g7QxxSFsWyTPKuzd7","openStreetMaps":"https://www.openstreetmap.org/relation/1403916"},"population":67391582,"gini":{"2018":32.4},"fifa":"FRA","car":{"signs":["F"],"side":"right"},"timezones":["UTC-10:00","UTC-09:30","UTC-09:00","UTC-08:00","UTC-04:00","UTC-03:00","UTC+01:00","UTC+02:00","UTC+03:00","UTC+04:00","UTC+05:00","UTC+10:00","UTC+11:00","UTC+12:00"],"continents":["Europe"],"flags":{"png":"https://flagcdn.com/w320/fr.png","svg":"https://flagcdn.com/fr.svg"},"coatOfArms":{"png":"https://mainfacts.com/media/images/coats_of_arms/fr.png","svg":"https://mainfacts.com/media/images/coats_of_arms/fr.svg"},"startOfWeek":"monday","capitalInfo":{"latlng":[48.87,2.33]},"postalCode":{"format":"#####","regex":"^(\\d{5})$"}}]'
+  recorded_at: Mon, 14 Nov 2022 19:15:44 GMT
+- request:
+    method: get
+    uri: https://api.geoapify.com/v2/places?apiKey=<places_api_key>&categories=tourism.sights&filter=circle:149.4068,17.6797,20000
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 14 Nov 2022 19:15:45 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Api-Version:
+      - '1.0'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - accept, accept-language, content-language, access-control-max-age, access-control-allow-headers,
+        access-control-allow-methods, access-control-allow-origin, allow, api-version,
+        cf-ray, content-encoding, content-type, date, expect-ct, server, status, vary,
+        cache-control, etag, last-modified, expires, host, cf-ipcountry, cdn-loop,
+        accept-encoding, x-forwarded-for, x-forwarded-proto, cf-visitor, user-agent,
+        cf-connecting-ip, x-forwarded-port
+      Access-Control-Allow-Methods:
+      - GET, POST, DELETE, OPTIONS, PUT
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Vary:
+      - Accept-Encoding
+      - Accept-Encoding
+      Cache-Control:
+      - private, max-age=0, no-cache
+      Cf-Cache-Status:
+      - DYNAMIC
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=bAH%2FmaVJm%2BCRkcJrVNUI7VrHU8eyf538j4gOoyVeHaSovXvc3qk%2BqjY4SWp8GbNr0q2GFoNoU8uETIfGKGQHmqn%2FpszEFwQjWq3lyto%2F%2Ba%2FJeGsERhrWra4Yll6B8s64FPM%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 76a213de1e6ae7db-DFW
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: UTF-8
+      string: '{"type":"FeatureCollection","features":[]}'
+  recorded_at: Mon, 14 Nov 2022 19:15:45 GMT
+recorded_with: VCR 6.1.0
