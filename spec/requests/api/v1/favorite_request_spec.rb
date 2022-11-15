@@ -86,6 +86,9 @@ describe 'Favorites Endpoints' do
     describe 'happy path' do
       it 'can return all of a users favorites when the users api-key is provided' do
         user = create(:user)
+        create_list(:favorite, 5, user: user)
+        create_list(:favorite, 5)
+
         request_params = { api_key: user.api_key}
 
         get '/api/v1/favorites', params: request_params
@@ -93,9 +96,46 @@ describe 'Favorites Endpoints' do
         expect(response).to be_successful
 
         favorites_response = JSON.parse(response.body, symbolize_names: true)
+        favorites_data = favorites_response[:data]
 
         expect(favorites_response).to be_a(Hash)
         expect(favorites_response.count).to eq(1)
+
+        expect(favorites_data).to be_an(Array)
+        expect(favorites_data.count).to be(5)
+
+        favorites_data.each do |favorite|
+          expect(favorite.count).to eq(3)
+          expect(favorite[:id]).to be_a(String)
+          expect(favorite[:type]).to be_a(String)
+          expect(favorite[:attributes]).to be_a(Hash)
+          expect(favorite[:attributes].count).to eq(4)
+          expect(favorite[:attributes][:recipe_title]).to be_a(String)
+          expect(favorite[:attributes][:recipe_link]).to be_a(String)
+          expect(favorite[:attributes][:country]).to be_a(String)
+          expect(favorite[:attributes][:created_at]).to be_a(String)
+        end
+      end
+
+      it 'favorites are in an array even if only one favorite is found for user' do
+        user = create(:user)
+        create(:favorite, user: user)
+        create_list(:favorite, 5)
+
+        request_params = { api_key: user.api_key}
+
+        get '/api/v1/favorites', params: request_params
+
+        expect(response).to be_successful
+
+        favorites_response = JSON.parse(response.body, symbolize_names: true)
+        favorites_data = favorites_response[:data]
+
+        expect(favorites_response).to be_a(Hash)
+        expect(favorites_response.count).to eq(1)
+
+        expect(favorites_data).to be_an(Array)
+        expect(favorites_data.count).to be(1)
       end
     end
   end
