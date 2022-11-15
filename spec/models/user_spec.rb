@@ -8,6 +8,10 @@ RSpec.describe User, type: :model do
     it { should validate_uniqueness_of :email }
   end
 
+  describe 'relationships' do
+    it { should have_many(:favorites) }
+  end
+
   describe 'instance methods' do
     describe '#create_new_api_key' do
       it 'creates a random 16 digit API Key for user' do
