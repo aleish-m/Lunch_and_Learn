@@ -19,8 +19,8 @@ RSpec.describe LearningResource do
     end
 
     it 'has attributes' do
-      expect(@learning_resource.country).to eq('pakistan')
-      expect(@learning_resource.country).to_not eq('Pakistan')
+      expect(@learning_resource.country).to eq('Pakistan')
+      expect(@learning_resource.country).to_not eq('pakistan')
 
       expect(@learning_resource.video).to be_a(Video)
       expect(@learning_resource.video).to respond_to(:title)

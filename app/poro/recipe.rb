@@ -5,6 +5,6 @@ class Recipe
     @title = recipe_data[:recipe][:label]
     @url = recipe_data[:recipe][:url]
     @image = recipe_data[:recipe][:image]
-    @country = country.downcase
+    @country = country
   end
 end

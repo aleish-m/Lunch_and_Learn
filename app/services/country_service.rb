@@ -4,8 +4,6 @@ class CountryService
     parse(response.body)
   end
 
-  private
-
   def self.conn
     Faraday.new('https://restcountries.com')
   end
