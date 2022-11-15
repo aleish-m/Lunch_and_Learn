@@ -1,4 +1,10 @@
 class Api::V1::FavoritesController < ApplicationController
+  def index
+    user = User.find_by(user_params)
+    favorites = user.favorites
+    render json: FavoriteSerializer.new(favorites)
+  end
+  
   def create
     user = User.find_by(user_params)
     favorite = Favorite.new(favorites_params)
