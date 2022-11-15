@@ -1,8 +1,9 @@
 class Api::V1::FavoritesController < ApplicationController
   def create
     user = User.find_by(user_params)
-    # require "pry"; binding.pry
     favorite = Favorite.new(favorites_params)
+    user.favorites << favorite
+    render json: {success: "Favorite added successfully"}, status: :created
   end
 
   private
@@ -12,6 +13,6 @@ class Api::V1::FavoritesController < ApplicationController
   end
 
   def favorites_params
-    params.permit(:country, :recipe_link, :recipe_title, )
+    params.require(:favorite).permit(:country, :recipe_link, :recipe_title)
   end
 end

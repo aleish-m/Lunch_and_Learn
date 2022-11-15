@@ -22,7 +22,7 @@ describe 'Favorites Endpoints' do
         expect(favorites_response.count).to eq(1)
         expect(favorites_response).to eq({success: "Favorite added successfully"})
 
-        expect(user.favorites.first.recipe_title).to be("Linguine with New Zealand Cockles recipes")
+        expect(user.favorites.first.recipe_title).to eq("Linguine with New Zealand Cockles recipes")
       end
     end
   end
