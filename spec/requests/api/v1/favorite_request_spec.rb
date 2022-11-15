@@ -12,7 +12,7 @@ describe 'Favorites Endpoints' do
                             recipe_title: 'Linguine with New Zealand Cockles recipes'
                           })
 
-        post '/api/v1/users', headers: request_headers, params: request_params
+        post '/api/v1/favorites', headers: request_headers, params: request_params
 
         expect(response).to have_http_status(201)
 
