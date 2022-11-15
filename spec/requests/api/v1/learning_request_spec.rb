@@ -188,6 +188,43 @@ describe 'Find Learning resources API' do
           expect(learning_attributes[:images]).to be_an(Array)
           expect(learning_attributes[:images]).to be_empty
         end
+
+        it 'if no country is requested it returns and endpoint with these objects empty', :vcr do
+          request_params = { country: ' ' }
+
+          get '/api/v1/learning_resources', params: request_params
+
+          expect(response).to be_successful
+
+          learning_response = JSON.parse(response.body, symbolize_names: true)
+          learning_data = learning_response[:data]
+          learning_attributes = learning_response[:data][:attributes]
+
+          expect(learning_response).to be_a(Hash)
+          expect(learning_response.count).to eq(1)
+
+          expect(learning_data).to be_a(Hash)
+          expect(learning_data.count).to eq(3)
+
+          expect(learning_data).to have_key(:id)
+          expect(learning_data[:id]).to be(nil)
+          expect(learning_data).to have_key(:type)
+          expect(learning_data[:type]).to be_a(String)
+          expect(learning_data).to have_key(:attributes)
+          expect(learning_data[:attributes]).to be_a(Hash)
+          expect(learning_data[:attributes].count).to eq(3)
+
+          expect(learning_attributes).to have_key(:country)
+          expect(learning_attributes[:country]).to be(nil)
+
+          expect(learning_attributes).to have_key(:video)
+          expect(learning_attributes[:video]).to be_an(Array)
+          expect(learning_attributes[:video]).to be_empty
+
+          expect(learning_attributes).to have_key(:images)
+          expect(learning_attributes[:images]).to be_an(Array)
+          expect(learning_attributes[:images]).to be_empty
+        end
       end
     end
   end

@@ -1,4 +1,14 @@
 class Api::V1::FavoritesController < ApplicationController
+  def index
+    user = User.find_by(user_params)
+    if user.present?
+      favorites = user.favorites
+      render json: FavoriteSerializer.new(favorites)
+    else
+      render json: FavoriteSerializer.error(404, 'Invalid user api key'), status: :not_found
+    end
+  end
+
   def create
     user = User.find_by(user_params)
     favorite = Favorite.new(favorites_params)
@@ -8,7 +18,6 @@ class Api::V1::FavoritesController < ApplicationController
     else
       render json: FavoriteSerializer.error(404, 'Invalid user api key'), status: :not_found
     end
-
   end
 
   private
@@ -23,9 +32,9 @@ class Api::V1::FavoritesController < ApplicationController
 
   def validate_user_favorite(favorite)
     if favorite.save
-        render json: FavoriteSerializer.success, status: :created
-      else
-        render json: FavoriteSerializer.error(400, favorite.errors.full_messages.to_sentence), status: :bad_request
-      end
+      render json: FavoriteSerializer.success, status: :created
+    else
+      render json: FavoriteSerializer.error(400, favorite.errors.full_messages.to_sentence), status: :bad_request
+    end
   end
 end
