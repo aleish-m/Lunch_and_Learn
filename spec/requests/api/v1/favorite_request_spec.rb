@@ -81,4 +81,22 @@ describe 'Favorites Endpoints' do
       end
     end
   end
+
+  describe 'Get all saved favorites for a user' do
+    describe 'happy path' do
+      it 'can return all of a users favorites when the users api-key is provided' do
+        user = create(:user)
+        request_params = { api_key: user.api_key}
+
+        get '/api/v1/favorites', params: request_params
+
+        expect(response).to be_successful
+
+        favorites_response = JSON.parse(response.body, symbolize_names: true)
+
+        expect(favorites_response).to be_a(Hash)
+        expect(favorites_response.count).to eq(1)
+      end
+    end
+  end
 end
